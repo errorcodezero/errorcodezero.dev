@@ -23,6 +23,9 @@ dependencies:
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
     version: 0.1.6(tailwindcss@3.4.1)
+  '@fontsource/geist-mono':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@fontsource/geist-sans':
     specifier: ^5.0.1
     version: 5.0.1
@@ -668,6 +671,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/geist-mono@5.0.1:
+    resolution: {integrity: sha512-fbLTXtnGagDEaKmRqAnjbqWZbZ3RR6RExvNikt3hLI/qJXxaBZZw8OH+Ve5rAxVxmKwz0a5GmPk2cqW0aapbfQ==}
+    dev: false
 
   /@fontsource/geist-sans@5.0.1:
     resolution: {integrity: sha512-Q/GGewhqc6WTtqbOQWaHCar/BZY3H6Nu0J65BuWYOCXUhc/iEhRP9n+7V2KZ3X8+/ZNMCfFzxzrUZrQYB/lnNw==}

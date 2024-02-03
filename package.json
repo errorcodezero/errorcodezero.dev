@@ -16,6 +16,7 @@
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
     "@catppuccin/tailwindcss": "^0.1.6",
+    "@fontsource/geist-mono": "^5.0.1",
     "@fontsource/geist-sans": "^5.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "astro": "^4.3.2",
