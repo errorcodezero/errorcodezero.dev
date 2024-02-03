@@ -1,0 +1,19 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<div class="text-center pt-2">
+			<HeaderLink class="header_link" href="/">Home</HeaderLink>
+			<HeaderLink class="header_link" href="/blog">Blog</HeaderLink>
+			<HeaderLink class="header_link" href="/about">About</HeaderLink>
+		</div>
+	</nav>
+</header>
+
+<style>
+    .header_link {
+        @apply bg-ctp-blue text-ctp-surface0 hover:bg-ctp-surface0 hover:text-ctp-blue rounded-xl p-2 m-2;
+    }
+</style>
