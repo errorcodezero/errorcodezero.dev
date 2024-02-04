@@ -1,5 +1,5 @@
 .default {
-    @apply prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl text-ctp-text bg-ctp-crust font-sans prose-code:font-mono prose-ul:list-disc prose-code:p-2 prose-code:rounded-xl prose-blockquote:p-3 prose-blockquote:my-4 prose-blockquote:border-s-4 prose-blockquote:border-ctp-blue prose-blockquote:rounded-sm prose-blockquote:text-ctp-subtext0;
+    @apply prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl text-ctp-text bg-ctp-crust font-sans prose-code:font-mono prose-ul:list-disc prose-code:p-2 prose-code:rounded-xl prose-blockquote:p-3 prose-blockquote:my-4 prose-blockquote:border-s-4 prose-blockquote:border-ctp-blue prose-blockquote:rounded-sm prose-blockquote:text-ctp-subtext0 prose-a:text-ctp-blue;
 }
 
 .content {
