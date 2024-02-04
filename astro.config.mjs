@@ -6,6 +6,11 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  integrations: [mdx(), sitemap(), tailwind()]
+  site: 'https://www.errorcodezero.dev',
+  integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      theme: "catppuccin-mocha"
+    }
+  }
 });
