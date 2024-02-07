@@ -2,6 +2,7 @@
 title: "Why vim is the best"
 description: "The reasons why you should switch to vim and how it is better"
 pubDate: "Feb 4 2024"
+updatedDate: "Feb 7 2023"
 heroImage: "/why-vim-is-the-best.png"
 ---
 
@@ -12,7 +13,7 @@ I might be a bit biased but vim keybinds are honestly the best way to edit text.
 
 I always found this as an annoying arguement. I mean I might spend too much time making my neovim config look nice but I feel like learning vim keybinds is not that huge of a time investment. After all, I learned them incrementally as I was working on my projects. After you learn them, you're able to edit text at lightspeed.
 
-<br> 
+astro
 
 I also told him that neovim is so much faster than the bloated vscode. After all, imagine running an entire chromium instance(electron 💩) rather than just a binary that loads a couple of lua files. He said the only reason that matters is because my computer sucks(might be true but neovim will always still be faster even on the best machines).
 
@@ -46,6 +47,8 @@ As a neovim user(or at least vim keybinds in an editor), you should never resist
 > \- A very wise man
 
 Imagine getting to send a screenshot of your setup to others. Nothing screams chad quite like a nice neovim set up 🗿.
+
+<br>
 
 # Conclusion?
 
