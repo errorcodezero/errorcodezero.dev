@@ -13,8 +13,6 @@ I might be a bit biased but vim keybinds are honestly the best way to edit text.
 
 I always found this as an annoying arguement. I mean I might spend too much time making my neovim config look nice but I feel like learning vim keybinds is not that huge of a time investment. After all, I learned them incrementally as I was working on my projects. After you learn them, you're able to edit text at lightspeed.
 
-astro
-
 I also told him that neovim is so much faster than the bloated vscode. After all, imagine running an entire chromium instance(electron 💩) rather than just a binary that loads a couple of lua files. He said the only reason that matters is because my computer sucks(might be true but neovim will always still be faster even on the best machines).
 
 <br>
