@@ -2,7 +2,7 @@
 title: "Why vim is the best"
 description: "The reasons why you should switch to vim and how it is better"
 pubDate: "Feb 4 2024"
-updatedDate: "Feb 7 2023"
+updatedDate: "Feb 8 2023"
 heroImage: "/why-vim-is-the-best.png"
 ---
 
@@ -30,6 +30,7 @@ If you aren't aware by the way here is the difference between vim and neovim:
 - Vim keybinds are the style of editing in vim and this is not editor specific(it can even be done in other editors)
 - Neovim is a fork of vim which makes it easier to customize and add plugins
 
+I'm trying to convince people to at least try vim keybinds and then mayeb swap over to neovim. In my opinion there isn't really a reason to go for the original vim program. When I refer to vim from now on, I mean the keybinds.
 
 <br>
 
@@ -41,12 +42,12 @@ Vim lets you edit fast. With vim, the need to even use the mouse is almost compl
 
 # Bragging rights
 
-As a neovim user(or at least vim keybinds in an editor), you should never resist the urge to brag to others.
+As a vim user, you should never resist the urge to brag to others.
 
 > "Half the reason to even use vim is to brag to others"
 > \- A very wise man
 
-Imagine getting to send a screenshot of your setup to others. Nothing screams chad quite like a nice neovim set up 🗿.
+Imagine getting to send a screenshot of your setup to others. Nothing screams chad quite like a nice setup 🗿.
 
 <br>
 
@@ -54,4 +55,4 @@ Imagine getting to send a screenshot of your setup to others. Nothing screams ch
 
 Whether you decide to use vim or not, it's important that you keep these points in mind. I highly recommend that you at lesat give it a shot and see if you like it or not.
 
-<a href="https://github.com/errorcodezero/dotfiles/tree/main/dot_config/nvim">My Neovim Setup</a>
+<a href="https://github.com/errorcodezero/dotfiles/tree/main/dot_config/nvim">My Neovim Config</a>
