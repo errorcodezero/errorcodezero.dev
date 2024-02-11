@@ -11,7 +11,7 @@ Choosing a tech stack is honestly essential in a project. I wanted to build this
 
 # Astro
 
-[Astro](https://astro.build/) is a great way to build blogs and portfolio sites. It is basically a static site generator with great support for tools like tailwind css, 
+[Astro](https://astro.build/) is a great way to build blogs and portfolio sites. It is basically a static site generator with great support for tools like tailwind css, mdx, etc. 
 
 <br>
 
