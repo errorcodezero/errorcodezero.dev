@@ -7,13 +7,9 @@ heroImage: "/site-tech-stack.png"
 
 Choosing a tech stack is honestly essential in a project. I wanted to build this site with good tools that would let me work fast and give a good experience. I want to present my tech stack.
 
-<br>
-
 # Astro
 
 [Astro](https://astro.build/) is a great way to build blogs and portfolio sites. It is basically a static site generator with great support for tools like tailwind css, mdx, etc. 
-
-<br>
 
 # Vercel
 

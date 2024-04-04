@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind(), robotsTxt()],
   markdown: {
     shikiConfig: {
-      theme: "catppuccin-mocha"
+      theme: "catppuccin-mocha",
     }
   }
 });
