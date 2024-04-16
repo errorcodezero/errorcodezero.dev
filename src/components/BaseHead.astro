@@ -4,6 +4,10 @@
 import '../styles/global.css';
 import '@fontsource/geist-sans';
 import '@fontsource/geist-mono';
+import geistSans from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2'
+import geistMono from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2'
+import geistSansWoff from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff'
+import geistMonoWoff from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff'
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
@@ -47,3 +51,9 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 
 <!-- View Transitions -->
 <ViewTransitions />
+
+<!-- Preloads -->
+<link rel="preload" href={geistSans} as="font" type="font/woff2" crossorigin>
+<link rel="preload" href={geistMono} as="font" type="font/woff2" crossorigin>
+<link rel="preload" href={geistSansWoff} as="font" type="font/woff" crossorigin>
+<link rel="preload" href={geistMonoWoff} as="font" type="font/woff" crossorigin>
