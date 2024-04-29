@@ -2,6 +2,7 @@
 title: "New Laptop"
 description: "I got a new laptop and this is my experience so far"
 pubDate: "April 3 2024"
+updatedDate: "April 29 2024"
 ---
 
 I've been using the System76 Gazelle 18 for a while and I've honestly really enjoyed it. Compared to the old 2015 Macbook which I used for a while, this thing blows that out of the water. Here's my neofetch:
@@ -35,7 +36,7 @@ I honestly am enjoying this laptop. The only issues I've had are that the fans g
 
 Some other interesting quirk about the laptop is the usage of a barrel port instead of USB-C for charging. I honestly didn't like it initially since I wanted to have one cable that I could use to charge both my phone and laptop. Not to mention that the port was located in the back of the laptop rather than the front. After using it for a while I can say with confidence that this is a genius idea. Being a barrel port, I can rotate the charger around depending on where the outlet is.
 
-Now on the more unfortunate side: Battery Life. It isn't great on this machine. Even with the gpu disabled via [NVIDIA Optimus](https://www.nvidia.com/en-us/geforce/technologies/optimus/technology/), I can get an hour and a half of battery life. However, for my use cases, I think it isn't actually that bad. One thing to consider is that I am never away with the laptop from an outlet for more than 30 minutes at a time. I also think that the additional performance and dedicated gpu make up for it. I don't think it's too bad. If I **really** need extra battery life, I honestly don't even mind using a powerbank.
+Obviously with more powerful machines like this, the battery life takes a hit. ~~Even with the gpu disabled via [NVIDIA Optimus](https://www.nvidia.com/en-us/geforce/technologies/optimus/technology/), I can get an hour and a half of battery life~~ The battery life is actually a lot better than that now that I've done some testing. With the gpu disabled, I can get around 6 hours of battery life. With the gpu enabled, I can get 2 hours. However, for my use cases, I think it isn't actually that bad. One thing to consider is that I am never away with the laptop from an outlet for more than 30 minutes at a time. I also think that the additional performance and dedicated gpu make up for it. I don't think it's too bad. If I **really** need extra battery life, I honestly don't even mind using a powerbank.
 
 # Conclusion
 
