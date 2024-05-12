@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -22,6 +23,7 @@ import Footer from '../components/Footer.astro';
                 <li>I'm looking for the next startup idea.</li>
                 <li>I don't like repetition.</li>
             </ul>
+            <Image src="/cooler_logo_clear.png" alt="The word error" width={500} height={500}>
 		</main>
         <Footer/>
 	</body>
