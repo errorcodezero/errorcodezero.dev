@@ -21,7 +21,7 @@ import BlogImage from "../components/BlogImage.astro"
 		<main>
 			<article>
 				<div>
-					{heroImage && <BlogImage imagePath={`/src/assets${heroImage}`} altText={heroImageAlt} />}
+					{heroImage && <BlogImage imagePath={`/src/assets${heroImage}`} altText={!heroImageAlt ? "" : heroImageAlt} />}
 				</div>
 				<div class="blog">
 						<div>
