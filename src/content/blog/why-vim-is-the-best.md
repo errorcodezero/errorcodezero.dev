@@ -4,6 +4,7 @@ description: "The reasons why you should switch to vim and how it is better"
 pubDate: "Feb 4 2024"
 updatedDate: "Feb 8 2023"
 heroImage: "/why-vim-is-the-best.png"
+heroImageAlt: "My neovim config."
 ---
 
 I might be a bit biased but vim keybinds are honestly the best way to edit text. It's come to the point where I started looking for a way to add them to google docs(editing documents for school would be a breeze then). I know a friend who doesn't want to take the time to learn those keybinds.
