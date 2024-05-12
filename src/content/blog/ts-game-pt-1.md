@@ -13,7 +13,7 @@ The game is essentially going to be fully text based and not really have any gra
 
 # Only issue? I've never built a realtime multiplayer backend.
 
-![The model that is going to be used for the game](/typescript-game-model.png)
+![The model that is going to be used for the game](../../assets/typescript-game-model.png)
 
 It is pretty simple what I planned for the model. Essentially I am going to just have a server using the edge runtime which takes in the user requests and just talks to the database. This should scale decently well. Not 100% sure how well this is going to work when I begin adding actual movement and lobbies into the game. This is my first time I am building anything that is this realtime and will have many streams of data coming in at once so I hope it goes well.
 
