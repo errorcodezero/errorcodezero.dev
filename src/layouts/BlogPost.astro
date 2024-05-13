@@ -7,8 +7,9 @@ import Footer from '../components/Footer.astro'
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, categories } = Astro.props;
 import BlogImage from "../components/BlogImage.astro"
+import tags from "../tags"
 ---
 
 <html lang="en">
@@ -35,6 +36,23 @@ import BlogImage from "../components/BlogImage.astro"
 							}
 						</div>
 						<h1>{title}</h1>
+                        <div class="flex flex-wrap space-x-1">
+                            {
+                                categories?.map((tag) => {
+                                    let tagColor = "text";
+
+                                    for (let i = 0; i < tags.length; i++) {
+                                        if(tags[i][0] === tag) {
+                                            tagColor = tags[i][1]
+                                        }
+                                    }
+
+                                    return (
+                                        <p class={`bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5 text-ctp-${tagColor}`}>#{tag}</p>
+                                    )
+                                })
+                            }
+                        </div>
 						<hr />
 					<slot />
 				</div>

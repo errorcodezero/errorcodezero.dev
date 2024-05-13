@@ -2,6 +2,7 @@
 title: "Linux for the Technologically Illiterate"
 description: "How I set up a Linux laptop for someone who's technologically illiterate"
 pubDate: "May 10 2024"
+categories: ["linux", "IT", "laptop"]
 ---
 
 I recently had to set up a laptop for someone who didn't know how to use technology. The only tech devices they were remotely familiar with were an ipad and a chromebook. I had an old laptop laying around and I wanted to give it them and have it set up and I had a few options I could do:
