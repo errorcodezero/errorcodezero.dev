@@ -3,30 +3,31 @@ title: "New Laptop"
 description: "I got a new laptop and this is my experience so far"
 pubDate: "April 3 2024"
 updatedDate: "April 29 2024"
+categories: ["linux", "laptop"]
 ---
 
 I've been using the System76 Gazelle 18 for a while and I've honestly really enjoyed it. Compared to the old 2015 Macbook which I used for a while, this thing blows that out of the water. Here's my neofetch:
 
 ```
-             .',;::::;,'.                errorcodezero@errorcodezero 
-         .';:cccccccccccc:;,.            --------------------------- 
-      .;cccccccccccccccccccccc;.         OS: Fedora release 40 (Forty) x86_64 
-    .:cccccccccccccccccccccccccc:.       Host: Gazelle gaze18 
-  .;ccccccccccccc;.:dddl:.;ccccccc;.     Kernel: 6.8.2-300.fc40.x86_64 
- .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    Uptime: 3 hours, 9 mins 
-.:ccccccccccccc;KMMc;cc;xMMc:ccccccc:.   Packages: 3083 (rpm), 25 (flatpak) 
-,cccccccccccccc;MMM.;cc;;WW::cccccccc,   Shell: fish 3.7.0 
-:cccccccccccccc;MMM.;cccccccccccccccc:   Resolution: 1920x1080 
-:ccccccc;oxOOOo;MMM0OOk.;cccccccccccc:   DE: Plasma 6.0.2 
-cccccc:0MMKxdd:;MMMkddc.;cccccccccccc;   WM: kwin 
-ccccc:XM0';cccc;MMM.;cccccccccccccccc'   WM Theme: Breeze 
-ccccc;MMo;ccccc;MMW.;ccccccccccccccc;    Theme: [Plasma], Breeze-Dark [GTK2], Breeze [GTK3] 
-ccccc;0MNc.ccc.xMMd:ccccccccccccccc;     Icons: [Plasma], breeze-dark [GTK2/3] 
-cccccc;dNMWXXXWM0::cccccccccccccc:,      Terminal: kitty 
-cccccccc;.:odl:.;cccccccccccccc:,.       CPU: 13th Gen Intel i9-13900H (20) @ 5.200GHz 
-:cccccccccccccccccccccccccccc:'.         GPU: NVIDIA GeForce RTX 3050 Mobile 
-.:cccccccccccccccccccccc:;,..            GPU: Intel Raptor Lake-P [Iris Xe Graphics] 
-  '::cccccccccccccc::;,.                 Memory: 3271MiB / 15829MiB 
+             .',;::::;,'.                errorcodezero@errorcodezero
+         .';:cccccccccccc:;,.            ---------------------------
+      .;cccccccccccccccccccccc;.         OS: Fedora release 40 (Forty) x86_64
+    .:cccccccccccccccccccccccccc:.       Host: Gazelle gaze18
+  .;ccccccccccccc;.:dddl:.;ccccccc;.     Kernel: 6.8.2-300.fc40.x86_64
+ .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    Uptime: 3 hours, 9 mins
+.:ccccccccccccc;KMMc;cc;xMMc:ccccccc:.   Packages: 3083 (rpm), 25 (flatpak)
+,cccccccccccccc;MMM.;cc;;WW::cccccccc,   Shell: fish 3.7.0
+:cccccccccccccc;MMM.;cccccccccccccccc:   Resolution: 1920x1080
+:ccccccc;oxOOOo;MMM0OOk.;cccccccccccc:   DE: Plasma 6.0.2
+cccccc:0MMKxdd:;MMMkddc.;cccccccccccc;   WM: kwin
+ccccc:XM0';cccc;MMM.;cccccccccccccccc'   WM Theme: Breeze
+ccccc;MMo;ccccc;MMW.;ccccccccccccccc;    Theme: [Plasma], Breeze-Dark [GTK2], Breeze [GTK3]
+ccccc;0MNc.ccc.xMMd:ccccccccccccccc;     Icons: [Plasma], breeze-dark [GTK2/3]
+cccccc;dNMWXXXWM0::cccccccccccccc:,      Terminal: kitty
+cccccccc;.:odl:.;cccccccccccccc:,.       CPU: 13th Gen Intel i9-13900H (20) @ 5.200GHz
+:cccccccccccccccccccccccccccc:'.         GPU: NVIDIA GeForce RTX 3050 Mobile
+.:cccccccccccccccccccccc:;,..            GPU: Intel Raptor Lake-P [Iris Xe Graphics]
+  '::cccccccccccccc::;,.                 Memory: 3271MiB / 15829MiB
 ```
 
 I honestly am enjoying this laptop. The only issues I've had are that the fans go a little crazy sometimes. It's real fun sitting in chemistry browsing the periodic table and all of a sudden my laptop decides it's a great time to begin to blast off. I also notice that the second I open steam, the fans start to ramp up(even if no games are launched). The funny thing is that once I launch a game, the fans will actually turn down a good amount of the time.
@@ -40,5 +41,4 @@ Obviously with more powerful machines like this, the battery life takes a hit. ~
 
 # Conclusion
 
-I really like this laptop. It works great for my daily tasks as well as some gaming. I would recommend this laptop for anyone who needs performance and is willing to sacrifice battery life. 
-
+I really like this laptop. It works great for my daily tasks as well as some gaming. I would recommend this laptop for anyone who needs performance and is willing to sacrifice battery life.

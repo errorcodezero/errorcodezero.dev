@@ -9,7 +9,13 @@ type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, categories } = Astro.props;
 import BlogImage from "../components/BlogImage.astro"
-import tags from "../tags"
+import Tags from "../components/Tags.astro"
+
+let tags = categories;
+
+if (!categories) {
+    tags = []
+}
 ---
 
 <html lang="en">
@@ -21,39 +27,25 @@ import tags from "../tags"
 		<Header />
 		<main>
 			<article>
-				<div>
-					{heroImage && <BlogImage imagePath={`/src/assets${heroImage}`} altText={!heroImageAlt ? "" : heroImageAlt} />}
-				</div>
+                <div class="space-y-2">
+                    <div>
+                        {heroImage && <BlogImage imagePath={`/src/assets${heroImage}`} altText={!heroImageAlt ? "" : heroImageAlt} />}
+                    </div>
+                    <div>
+                        <FormattedDate date={pubDate} />
+                        {
+                            updatedDate && (
+                                <p>
+                                    Last updated on <FormattedDate date={updatedDate} />
+                                </p>
+                            )
+                        }
+                    </div>
+                    <h1>{title}</h1>
+                    <Tags data={tags}/>
+                    <hr />
+                </div>
 				<div class="blog">
-						<div>
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<p>
-										Last updated on <FormattedDate date={updatedDate} />
-									</p>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-                        <div class="flex flex-wrap space-x-1">
-                            {
-                                categories?.map((tag) => {
-                                    let tagColor = "text";
-
-                                    for (let i = 0; i < tags.length; i++) {
-                                        if(tags[i][0] === tag) {
-                                            tagColor = tags[i][1]
-                                        }
-                                    }
-
-                                    return (
-                                        <p class={`bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5 text-ctp-${tagColor}`}>#{tag}</p>
-                                    )
-                                })
-                            }
-                        </div>
-						<hr />
 					<slot />
 				</div>
 			</article>

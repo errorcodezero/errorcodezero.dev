@@ -2,6 +2,7 @@
 title: "The Hackathon Experience"
 description: "I went to a 24 hour hackathon yesterday and here was my experience as well as what I learned."
 pubDate: "April 15 2024"
+categories: ["hackathon", "typescript"]
 ---
 
 On April 7 2024, I went to my first "hackathon" hackathon(the ones I've been to before have been 6 hours or 3 hours and weren't this long). This hackathon had funding from companies, a bunch of events planned, and most importantly, laptop stickers. I gotta say that it was an experience that I really enjoyed. I worked on [the project](https://github.com/rrcoder0167/chomp) with my friend Riddhiman(check out [his website](https://rrcoder0167.is-a.dev/)). While I wasn't going into this hackathon with zero experience, I made a lot of mistakes which I surely hope I won't do again. Here's the story of what happened.

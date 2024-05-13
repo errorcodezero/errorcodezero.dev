@@ -2,6 +2,7 @@
 title: "Building a Multiplayer Game in Typescript Part 2"
 description: "The finalized idea for the game I'm building in typescript"
 pubDate: "Feb 19 2024"
+categories: ["typescript", "gamedev"]
 ---
 
 So I've finalized a few things regarding the game. I decided on a tech stack, features that will and won't be in the game, as well as how certain things inside the game are going to work.
@@ -11,6 +12,7 @@ So I've finalized a few things regarding the game. I decided on a tech stack, fe
 Unlike what I said last time, I don't think there is going to be movement in the game. I really want this to be more text focused rather than an actual game where you move around and interact with objects. There will still be objects, bosses, battles, etc but I think that movement isn't going to fit with the style.
 
 Some features I'm thinking of adding are going to be:
+
 - Items
 - Spells that can be made using items
 - Boosters

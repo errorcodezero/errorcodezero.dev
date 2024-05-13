@@ -5,6 +5,7 @@ pubDate: "Feb 4 2024"
 updatedDate: "Feb 8 2023"
 heroImage: "/why-vim-is-the-best.png"
 heroImageAlt: "My neovim config."
+categories: ["neovim"]
 ---
 
 I might be a bit biased but vim keybinds are honestly the best way to edit text. It's come to the point where I started looking for a way to add them to google docs(editing documents for school would be a breeze then). I know a friend who doesn't want to take the time to learn those keybinds.
@@ -16,11 +17,12 @@ I always found this as an annoying arguement. I mean I might spend too much time
 
 I also told him that neovim is so much faster than the bloated vscode. After all, imagine running an entire chromium instance(electron 💩) rather than just a binary that loads a couple of lua files. He said the only reason that matters is because my computer sucks(might be true but neovim will always still be faster even on the best machines).
 
-I think at the end of the day, it's just him being too lazy to give neovim a shot. He won't even try the vim keybinds for vscode. But anyways, here are the reasons you should use neovim. 
+I think at the end of the day, it's just him being too lazy to give neovim a shot. He won't even try the vim keybinds for vscode. But anyways, here are the reasons you should use neovim.
 
 # FYI
 
 If you aren't aware by the way here is the difference between vim and neovim:
+
 - Vim is a program
 - Vim keybinds are the style of editing in vim and this is not editor specific(it can even be done in other editors)
 - Neovim is a fork of vim which makes it easier to customize and add plugins

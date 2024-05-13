@@ -3,6 +3,7 @@ title: "Building a Multiplayer Game in Typescript Part 1"
 description: "My idea for a game that I want to build in typescript."
 pubDate: "Feb 7 2024"
 updatedDate: "Feb 8 2024"
+categories: ["typescript", "gamedev"]
 ---
 
 I had an interesting idea for a game. It would be a miniature society. In this society, there is competition for resources which are used to craft items. Items can be used to kill monsters. The goal is essentially to become the richest in the society and have the most power and influence. People also will try to get rare collectibles in game. It's similar to hypixel skyblock.
@@ -22,4 +23,3 @@ Note that regional edge means that the serverless functions spun up will always 
 # Name for this game?
 
 I'm thinking...
-
