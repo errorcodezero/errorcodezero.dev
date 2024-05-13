@@ -10,12 +10,6 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, categories } = Astro.props;
 import BlogImage from "../components/BlogImage.astro"
 import Tags from "../components/Tags.astro"
-
-let tags = categories;
-
-if (!categories) {
-    tags = []
-}
 ---
 
 <html lang="en">
@@ -42,7 +36,7 @@ if (!categories) {
                         }
                     </div>
                     <h1>{title}</h1>
-                    <Tags data={tags}/>
+                    <Tags data={!categories ? [] : categories}/>
                     <hr />
                 </div>
 				<div class="blog">
