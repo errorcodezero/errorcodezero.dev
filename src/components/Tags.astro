@@ -10,16 +10,16 @@ import tags from "../tags"
 <div class="flex flex-wrap space-x-1">
     {
         data?.map((tag) => {
-            let tagColor = "text-ctp-text";
+            let tagColor = "!text-ctp-text";
 
             for (let i = 0; i < tags.length; i++) {
                 if(tags[i][0] === tag) {
-                    tagColor = tags[i][1]
+                    tagColor = `${tags[i][1]}`
                 }
             }
 
             return (
-                <p class={`${tagColor} bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5`}>#{tag}</p>
+                <a href=`/tags/${tag}` class={`${tagColor} !no-underline bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5`}>#{tag}</a>
             )
         })
      }
