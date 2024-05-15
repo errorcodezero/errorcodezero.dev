@@ -28,17 +28,17 @@ posts = posts.filter(post => post.data.categories.includes(tag));
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`#${tag}`} description={`Posts filtered by #${tag}`} />
+		<BaseHead title=`#${tag}` description=`Posts with #${tag}` />
 	</head>
 	<body class="default">
 		<Header />
 		<main>
-            <h1>#{tag}</h1>
+            <h1 class="pb-2">#{tag}</h1>
 			<section>
-				<ul>
+				<ul class="!pl-0.5 space-y-2">
 					{
 						posts.map((post) => (
-							<li class="pb-2">
+							<li class="pb-2 !list-none">
 								<a href={`/blog/${post.slug}/`}>
 									<p class="title">{post.data.title}</p>
 									<p class="date">
