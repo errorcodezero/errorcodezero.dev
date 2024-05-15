@@ -1,26 +1,39 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION } from '../../consts';
+import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import Footer from '../../components/Footer.astro';
+import tags from "../../tags"
+
+export async function getStaticPaths() {
+  const paths: { params: { tag: string } }[] = []
+  for(let i = 0; i<tags.length; i++) { 
+      paths.push({ params: { tag: tags[i][0] } })
+  }
+
+  return paths;
+}
+
+const { tag } = Astro.params;
 
 let posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+)
+
 posts = posts.reverse();
+posts = posts.filter(post => post.data.categories.includes(tag));
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Blog" description={SITE_DESCRIPTION} />
+		<BaseHead title={`#${tag}`} description={`Posts filtered by #${tag}`} />
 	</head>
 	<body class="default">
 		<Header />
 		<main>
-            <h1>Blogs</h1>
+            <h1>#{tag}</h1>
 			<section>
 				<ul>
 					{
