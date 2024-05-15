@@ -1,7 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
 import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
 import coolerLogo from '../assets/cooler_logo.svg'
@@ -10,7 +10,7 @@ import coolerLogo from '../assets/cooler_logo.svg'
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title="Home" description={SITE_DESCRIPTION} />
 	</head>
 	<body class="default">
 		<Header />
