@@ -1,0 +1,21 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION } from '../consts';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Home" description={SITE_DESCRIPTION} />
+	</head>
+	<body class="default">
+		<Header />
+		<main>
+            <h1>404</h1>
+            <p>This page doesn't exist.</p>
+		</main>
+        <Footer/>
+	</body>
+</html>
