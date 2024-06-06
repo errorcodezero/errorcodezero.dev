@@ -8,7 +8,11 @@ const tags = [
   ["astro", "!text-ctp-red"],
   ["test", "!text-ctp-orange"],
   ["tech-stack", "!text-ctp-blue"],
-  ["gamedev", "!text-ctp-sky"]
+  ["gamedev", "!text-ctp-sky"],
+  ["snake", "!text-ctp-lavender"],
+  ["fediverse", "!text-ctp-green"],
+  ["mastodon", "!text-ctp-mauve"],
+  ["devlog", "!text-ctp-red"]
 ];
 
 export default tags;

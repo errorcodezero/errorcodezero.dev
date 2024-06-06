@@ -12,7 +12,7 @@ I wanted to give myself a challenge so I decided to make this game fully within 
 
 The game is essentially going to be fully text based and not really have any graphics. I think this is a good starting point and maybe I can begin to integrate graphics and "locations" in the game later. For example, there won't really be any movement(not yet at least) but there will be the ability to interact with the world via text.
 
-# Only issue? I've never built a realtime multiplayer backend.
+## Only issue? I've never built a realtime multiplayer backend.
 
 ![The model that is going to be used for the game](../../assets/typescript-game-model.png)
 
@@ -20,6 +20,6 @@ It is pretty simple what I planned for the model. Essentially I am going to just
 
 Note that regional edge means that the serverless functions spun up will always be near the database. Also note that we are using the [edge runtime](https://edge-runtime.vercel.app/) which isn't to be confused with the edge location.
 
-# Name for this game?
+## Name for this game?
 
 I'm thinking...

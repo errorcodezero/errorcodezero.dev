@@ -39,6 +39,6 @@ Some other interesting quirk about the laptop is the usage of a barrel port inst
 
 Obviously with more powerful machines like this, the battery life takes a hit. ~~Even with the gpu disabled via [NVIDIA Optimus](https://www.nvidia.com/en-us/geforce/technologies/optimus/technology/), I can get an hour and a half of battery life~~ The battery life is actually a lot better than that now that I've done some testing. With the gpu disabled, I can get around 6 hours of battery life. With the gpu enabled, I can get 2 hours. However, for my use cases, I think it isn't actually that bad. One thing to consider is that I am never away with the laptop from an outlet for more than 30 minutes at a time. I also think that the additional performance and dedicated gpu make up for it. I don't think it's too bad. If I **really** need extra battery life, I honestly don't even mind using a powerbank.
 
-# Conclusion
+## Conclusion
 
 I really like this laptop. It works great for my daily tasks as well as some gaming. I would recommend this laptop for anyone who needs performance and is willing to sacrifice battery life.
