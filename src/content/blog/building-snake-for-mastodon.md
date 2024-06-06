@@ -2,6 +2,7 @@
 title: "Building Snake for Mastodon"
 description: "How and why I built snake for mastodon."
 pubDate: "June 6 2024"
+updatedDate: "June 6 2024"
 categories: ["snake", "fediverse", "mastodon", "typescript", "devlog"]
 ---
 
@@ -37,7 +38,7 @@ To get the grid to be displayed for mastodon, I made a simple function which loo
 - Snake Body - 🟩
 - Food - 🍎
 
-After that, I just set the bot up to make a post every hour with a poll that would close in an hour. Based on the results of the poll, the snake would move in that direction and a new post would be made with the snake in the new coordinates and a new poll.
+After that, I just set the bot up to make a post every ~~hour~~thirty minutes with a poll that would close in ~~an hour~~thirty minutes. Based on the results of the poll, the snake would move in that direction and a new post would be made with the snake in the new coordinates and a new poll.
 
 I set up a function to automatically generate options for the poll based on the state of the snake. For example, if the current direction of the snake is left, the snake should be able to continue left, go up, and go down. It shouldn't be able to go right since it would just immediately collide with itself.
 
