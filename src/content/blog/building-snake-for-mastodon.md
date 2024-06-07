@@ -45,7 +45,7 @@ I set up a function to automatically generate options for the poll based on the 
 From this, the bot was ready to use and try out.
 
 ## Extra features that might come soon.
-- ~~High Score System(I'm thinking of using the mastodon extra fields to store it)~~Implemented (6/7/24)
+- ~~High Score System(I'm thinking of using the mastodon extra fields to store it)~~ Implemented (6/7/24)
 - Cool snake modes(Like what polymars implemented)
 - Randomly generated style(The food could be a different emoji every time after its eaten such as perhaps a 🍔, the color of the background could change, etc)
 
