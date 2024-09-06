@@ -13,6 +13,7 @@ const tags = [
     ["fediverse", "!text-ctp-green"],
     ["mastodon", "!text-ctp-mauve"],
     ["devlog", "!text-ctp-red"],
+    ["this", "!text-ctp-orange"],
 ];
 
 export default tags;
