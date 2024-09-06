@@ -21,9 +21,11 @@ I wanted an instance which would work for bots and I eventually stumbled upon [b
 I wanted to build this in typescript since I have a lot of experience with it. I wanted to use a wrapper library for the mastodon api rather than directly interfacing with it. to solve this, I used [masto.js](https://github.com/neet/masto.js/) which is a really great library. It has amazing documentation and works really good with typescript.
 
 ## How does this work?
+
 Imagine a 6x6 grid. The position of the snake head and the food is randomly added within the grid. The coordinates the snake takes up are stored within an array. Pretty simple so far, right?
 
 As for movement, first, based on the direction that the snake should move, a new element is added to the start of the array which takes the old index 0 element and adds the direction to it. Then, the last element of the array is removed. It would look something like this:
+
 - `[[0, 1], [0, 2]]` - Initial
 - `[[0, 0], [0, 1], [0, 2]]` - Moving in a direction
 - `[[0, 0], [0, 1]]` - Removing the last element
@@ -33,6 +35,7 @@ Now when the snake eats some food, it is expected to grow. For this, we can chec
 Now things aren't that simple unfortunately. 2d arrays are really weird in accessing coordinates. For example, if I wanted to access the coordinate `(3,2)`, then I would use `grid[2][3]`. It's reversed!. The direction of movement also changes then. To move up, I need to decrease the y and its vice-versa for moving down. Left and right seem to work normally. After figuring out these quirks, I managed to get movement to work great.
 
 To get the grid to be displayed for mastodon, I made a simple function which looped over the 2d array and for each element, depending on what it was, it would use an emoji placed within a string:
+
 - Empty Space - 🟦
 - Snake Head - 🟢
 - Snake Body - 🟩
@@ -45,11 +48,13 @@ I set up a function to automatically generate options for the poll based on the 
 From this, the bot was ready to use and try out.
 
 ## Extra features that might come soon.
+
 - ~~High Score System(I'm thinking of using the mastodon extra fields to store it)~~ Implemented (6/7/24)
 - Cool snake modes(Like what polymars implemented)
 - Randomly generated style(The food could be a different emoji every time after its eaten such as perhaps a 🍔, the color of the background could change, etc)
 
 ## Code and Link
+
 [GitHub Repo](https://github.com/errorcodezero/mastodon-plays-snake)
 
 [Bot Link(@snake@botsin.space)](https://botsin.space/@snake)
