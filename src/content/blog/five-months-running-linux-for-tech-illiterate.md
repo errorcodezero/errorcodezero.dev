@@ -1,9 +1,12 @@
 ---
 title: "Five Months of Running Linux for someone who's Technologically Illiterate"
-description: "Updates on the linux laptop for someone who's technologically illiterate"
+description: "Updates on the linux laptop for someone who's technologically illiterate (Part 2)"
 pubDate: "October 9 2024"
+updatedDate: "October 9 2024"
 categories: ["linux", "IT", "laptop"]
 ---
+
+[Part 1](/linux-for-technologically-illiterate/)
 
 Five months ago I set up a laptop for someone who is pretty technologically illiterate. They're not able to type, don't have a good sense of online security, and the only computer they had used before was a chromebook.
 
