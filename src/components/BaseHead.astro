@@ -8,7 +8,6 @@ import geistSans from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.
 import geistMono from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2'
 import geistSansWoff from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff'
 import geistMonoWoff from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff'
-import { ViewTransitions } from 'astro:transitions';
 import coolerLogo from '~/assets/cooler_logo.svg'
 
 interface Props {
@@ -52,9 +51,6 @@ import logo from "../assets/logo.png"
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<!-- View Transitions -->
-<ViewTransitions />
-
 <!-- Preloads -->
 <link rel="preload" href={geistSans} as="font" type="font/woff2" crossorigin>
 <link rel="preload" href={geistMono} as="font" type="font/woff2" crossorigin>
@@ -69,3 +65,6 @@ import logo from "../assets/logo.png"
 
 <!--Mastodon Plays Snake(This is here for verifying the account) -->
 <link rel="me" href="https://botsin.space/@snake"/>
+<link rel="me" href="https://mastodon.world/@snake"/>
+<meta name="fediverse:creator" content="@errorcodezero@mas.to">
+<meta name="fediverse:creator" content="@snake@mastodon.world">
