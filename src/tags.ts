@@ -14,6 +14,7 @@ const tags = [
   ["mastodon", "!text-ctp-mauve"],
   ["devlog", "!text-ctp-red"],
   ["this", "!text-ctp-orange"],
+  ["rust", "!text-ctp-orange"],
 ];
 
 export default tags;
