@@ -6,6 +6,8 @@ updatedDate: "Jan 25 2025"
 categories: ["rust", "snake", "fediverse", "mastodon", "devlog"]
 ---
 
+Project Link: [github.com/errorcodezero/mastodon-plays-snake-rs](https://github.com/errorcodezero/mastodon-plays-snake-rs)
+
 I've wanted to learn rust for a very long time. I had been attracted by features such as it being a good low level language where I wouldn't have to worry about manual memory management or too much about memory safety. But I had put off making a project for a while since I never thought I had the skills to make it. A few days ago as I was progressing through [the great rust book](https://doc.rust-lang.org/book/) I figured to actually try and put my knowledge to the test. I'm not really the kind of person who can learn programming just through seeing it. I prefer to play around with the concepts and to try to use it in my own code to get a better idea of it.
 
 I was considering what to build with rust when I heard that some great first rust applications are CLI apps. I didn't really have an idea of what CLI to build so I ended up scrapping that. That's when I thought about rebuilding one of my older projects to work with rust. This led me to consider two different possibilities:
