@@ -1,66 +1,81 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '~/components/BaseHead.astro';
-import Header from '~/components/Header.astro';
-import FormattedDate from '~/components/FormattedDate.astro';
-import Footer from '~/components/Footer.astro'
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "~/components/BaseHead.astro";
+import Header from "~/components/Header.astro";
+import FormattedDate from "~/components/FormattedDate.astro";
+import Footer from "~/components/Footer.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, categories } = Astro.props;
-import BlogImage from "../components/BlogImage.astro"
-import Tags from "../components/Tags.astro"
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  heroImageAlt,
+  categories,
+} = Astro.props;
+import BlogImage from "../components/BlogImage.astro";
+import Tags from "../components/Tags.astro";
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-	<body class="default">
-		<Header />
-		<main>
-			<article>
-                <div class="space-y-2">
-                    <div>
-                        {heroImage && <BlogImage imagePath={`/src/assets${heroImage}`} altText={!heroImageAlt ? "" : heroImageAlt} />}
-                    </div>
-                    <div>
-                        <FormattedDate date={pubDate} />
-                        {
-                            updatedDate && (
-                                <p>
-                                    Last updated on <FormattedDate date={updatedDate} />
-                                </p>
-                            )
-                        }
-                    </div>
-                    <h1>{title}</h1>
-                    <Tags data={!categories ? [] : categories}/>
-                    <hr />
-                </div>
-				<div class="blog">
-					<slot />
-				</div>
-			</article>
-			<div class="p-4"></div>
-            <script src="https://giscus.app/client.js"
-                    data-repo="errorcodezero/errorcodezero.dev"
-                    data-repo-id="R_kgDOLNf6xQ"
-                    data-category="Comments"
-                    data-category-id="DIC_kwDOLNf6xc4CgLyh"
-                    data-mapping="title"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="bottom"
-                    data-theme="preferred_color_scheme"
-                    data-lang="en"
-                    data-loading="lazy"
-                    crossorigin="anonymous"
-                    async>
-            </script>
-		</main>
-        <Footer/>
-	</body>
+  <body class="default">
+    <Header />
+    <main>
+      <article>
+        <div class="space-y-2">
+          <div>
+            {
+              heroImage && (
+                <BlogImage
+                  imagePath={`/src/assets${heroImage}`}
+                  altText={!heroImageAlt ? "" : heroImageAlt}
+                />
+              )
+            }
+          </div>
+          <div>
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <p>
+                  Last updated on <FormattedDate date={updatedDate} />
+                </p>
+              )
+            }
+          </div>
+          <h1>{title}</h1>
+          <Tags data={!categories ? [] : categories} />
+          <hr />
+        </div>
+        <div class="blog">
+          <slot />
+        </div>
+      </article>
+      <div class="p-4"></div>
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="errorcodezero/errorcodezero.dev"
+        data-repo-id="R_kgDOLNf6xQ"
+        data-category="Comments"
+        data-category-id="DIC_kwDOLNf6xc4CgLyh"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
+    </main>
+    <Footer />
+  </body>
 </html>

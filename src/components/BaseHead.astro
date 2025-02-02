@@ -1,26 +1,26 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '~/styles/global.css';
-import '@fontsource/geist-sans';
-import '@fontsource/geist-mono';
-import geistSans from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2'
-import geistMono from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2'
-import geistSansWoff from '@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff'
-import geistMonoWoff from '@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff'
-import coolerLogo from '~/assets/cooler_logo.svg'
+import "~/styles/global.css";
+import "@fontsource/geist-sans";
+import "@fontsource/geist-mono";
+import geistSans from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2";
+import geistMono from "@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2";
+import geistSansWoff from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff";
+import geistMonoWoff from "@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff";
+import coolerLogo from "~/assets/cooler_logo.svg";
 
 interface Props {
-	title: string;
-	description: string;
-	image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = coolerLogo.src } = Astro.props;
-import { SITE_TITLE } from "../consts"
-import logo from "../assets/logo.png"
+import { SITE_TITLE } from "../consts";
+import logo from "../assets/logo.png";
 ---
 
 <!-- Global Metadata -->
@@ -52,19 +52,36 @@ import logo from "../assets/logo.png"
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <!-- Preloads -->
-<link rel="preload" href={geistSans} as="font" type="font/woff2" crossorigin>
-<link rel="preload" href={geistMono} as="font" type="font/woff2" crossorigin>
-<link rel="preload" href={geistSansWoff} as="font" type="font/woff" crossorigin>
-<link rel="preload" href={geistMonoWoff} as="font" type="font/woff" crossorigin>
+<link rel="preload" href={geistSans} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={geistMono} as="font" type="font/woff2" crossorigin />
+<link
+  rel="preload"
+  href={geistSansWoff}
+  as="font"
+  type="font/woff"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href={geistMonoWoff}
+  as="font"
+  type="font/woff"
+  crossorigin
+/>
 
 <!-- Cloudflare Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' type="text/partytown" is:inline data-cf-beacon='{"token": "98030f2e4bf4425897b0812f4787fa0d"}'></script>
+<script
+  defer
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  type="text/partytown"
+  is:inline
+  data-cf-beacon='{"token": "98030f2e4bf4425897b0812f4787fa0d"}'></script>
 
 <!--My mastodon account(This is here for verifying the account) -->
-<link rel="me" href="https://mas.to/@errorcodezero"/>
+<link rel="me" href="https://mas.to/@errorcodezero" />
 
 <!--Mastodon Plays Snake(This is here for verifying the account) -->
-<link rel="me" href="https://botsin.space/@snake"/>
-<link rel="me" href="https://mastodon.world/@snake"/>
-<meta name="fediverse:creator" content="@errorcodezero@mas.to">
-<meta name="fediverse:creator" content="@snake@mastodon.world">
+<link rel="me" href="https://botsin.space/@snake" />
+<link rel="me" href="https://mastodon.world/@snake" />
+<meta name="fediverse:creator" content="@errorcodezero@mas.to" />
+<meta name="fediverse:creator" content="@snake@mastodon.world" />

@@ -1,26 +1,31 @@
 ---
 interface Props {
-	data: string[];
+  data: string[];
 }
 
 const { data } = Astro.props;
-import tags from "~/tags"
+import tags from "~/tags";
 ---
 
 <div class="flex flex-wrap space-x-1">
-    {
-        data?.map((tag) => {
-            let tagColor = "!text-ctp-text";
+  {
+    data?.map((tag) => {
+      let tagColor = "!text-ctp-text";
 
-            for (let i = 0; i < tags.length; i++) {
-                if(tags[i][0] === tag) {
-                    tagColor = `${tags[i][1]}`
-                }
-            }
+      for (let i = 0; i < tags.length; i++) {
+        if (tags[i][0] === tag) {
+          tagColor = `${tags[i][1]}`;
+        }
+      }
 
-            return (
-                <a href=`/tags/${tag}` class={`${tagColor} !no-underline bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5`}>#{tag}</a>
-            )
-        })
-     }
+      return (
+        <a
+          href={`/tags/${tag}`}
+          class={`${tagColor} !no-underline bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5`}
+        >
+          #{tag}
+        </a>
+      );
+    })
+  }
 </div>

@@ -1,43 +1,43 @@
 ---
-import BaseHead from '~/components/BaseHead.astro';
-import Header from '~/components/Header.astro';
-import { SITE_DESCRIPTION } from '~/consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '~/components/FormattedDate.astro';
-import Footer from '~/components/Footer.astro';
+import BaseHead from "~/components/BaseHead.astro";
+import Header from "~/components/Header.astro";
+import { SITE_DESCRIPTION } from "~/consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "~/components/FormattedDate.astro";
+import Footer from "~/components/Footer.astro";
 
-let posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+let posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 posts = posts.reverse();
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title="Blog" description={SITE_DESCRIPTION} />
-	</head>
-	<body class="default">
-		<Header />
-		<main>
-            <h1 class="pb-2">Blogs</h1>
-			<section>
-				<ul class="!pl-0.5 space-y-2">
-					{
-						posts.map((post) => (
-							<li class="pb-2 !list-none">
-								<a href={`/blog/${post.slug}/`}>
-									<p class="title">{post.data.title}</p>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-        <Footer/>
-	</body>
+  <head>
+    <BaseHead title="Blog" description={SITE_DESCRIPTION} />
+  </head>
+  <body class="default">
+    <Header />
+    <main>
+      <h1 class="text-center pb-2">Blogs</h1>
+      <section>
+        <ul class="!pl-0.5 space-y-2">
+          {
+            posts.map((post) => (
+              <li class="pb-2 !list-none">
+                <a href={`/blog/${post.slug}/`}>
+                  <p class="title">{post.data.title}</p>
+                  <p class="date">
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>

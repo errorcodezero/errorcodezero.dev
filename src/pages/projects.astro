@@ -1,31 +1,25 @@
 ---
-import BaseHead from '~/components/BaseHead.astro';
-import Header from '~/components/Header.astro';
-import { SITE_DESCRIPTION } from '~/consts';
-import Footer from '~/components/Footer.astro';
-import { Image } from 'astro:assets';
-import coolerLogo from '~/assets/cooler_logo.svg'
+import BaseHead from "~/components/BaseHead.astro";
+import Header from "~/components/Header.astro";
+import { SITE_DESCRIPTION } from "~/consts";
+import Footer from "~/components/Footer.astro";
+import CardList from "~/components/CardList.astro";
+import { Image } from "astro:assets";
+import coolerLogo from "~/assets/cooler_logo.svg";
+import { Icon } from "astro-icon/components";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title="Home" description={SITE_DESCRIPTION} />
-	</head>
-	<body class="default">
-		<Header />
-		<main>
-            <h1>ErrorCode0</h1>
-            <p>I'm a programmer from the US. Here are some interesting facts about me:</p>
-            <ul>
-                <li>I like math and interesting logic problems.</li>
-                <li>I like a lot of different games such as the portal series, the half life series, minecraft.</li>
-                <li>I don't like repetition.</li>
-                <li>I'm looking for the next startup idea.</li>
-                <li>I don't like repetition.</li>
-            </ul>
-            <Image src={coolerLogo} alt="The word error" loading="eager" width="500"/>
-		</main>
-        <Footer/>
-	</body>
+  <head>
+    <BaseHead title="Home" description={SITE_DESCRIPTION} />
+  </head>
+  <body class="default">
+    <Header />
+    <main>
+      <h1 class="text-center">Projects</h1>
+      <CardList />
+    </main>
+    <Footer />
+  </body>
 </html>
