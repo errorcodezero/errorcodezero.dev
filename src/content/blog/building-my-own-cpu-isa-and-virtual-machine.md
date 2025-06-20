@@ -32,7 +32,7 @@ When you think of a turbine, you think of something fast and airy. I figured tha
 ![Stickman standing over dead c++ programmer's grave](../../assets/stickman-standing-over-cpp-programmer-grave.png)
 *bit of an artist here if you couldn't already tell*
 
-I decided to write my bytecode vm in C. While I've had used C before, I didn't have any big projects with it. My usage of it went as far as just poking around with it and shoving hello world programs into gcc. I did however have decent experience with C++ which coming out of developing mango I had began to get somewhat sick of. It was great for what it was but I got tired of all the complexities it brought with it. The last thing I wanted to even think about was move semantics and rules of 3/5/7(is it 9 now?).
+I decided to write my bytecode vm in C. While I have used C before, I didn't have any big projects with it. My usage of it went as far as just poking around with it and shoving hello world programs into gcc. I did however have decent experience with C++ which coming out of developing mango I had began to get somewhat sick of. It was great for what it was but I got tired of all the complexities it brought with it. The last thing I wanted to even think about was move semantics and rules of 3/5/7(is it 9 now?).
 
 C felt like a breath of fresh air to me. I liked it for the same reason that I enjoyed emulation and old computers: *the simplicity*.
 
