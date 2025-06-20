@@ -7,6 +7,8 @@ categories: ["C", "low-level", "emulation", "langdev"]
 
 Project Link: [github.com/errorcodezero/turbine](https://github.com/errorcodezero/turbine)
 
+*Please star my project. I'm trying to qualify for [shipwrecked](https://shipwrecked.hackclub.com) and I need a certain amount of github stars to qualify*
+
 To start this off, I want to say that it's been a while since I've created a new post. I quite frankly had been quite occupied with other activities and didn't give writing anything the time it needed. However, in those months of absence, I went down all sorts of paths in my programming journey that I never would have believed that I would go down. I want to give a brief story of how it all began.
 
 ## Story Time
