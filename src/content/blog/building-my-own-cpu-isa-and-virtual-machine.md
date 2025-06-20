@@ -81,7 +81,9 @@ Let's talk about each of the registers. Register A, B, C, D, and E are general p
 ![stack overflowing](../../assets/stack-overflowing.png)
 *recognize this? it's a stack overflowing*
 
-It's a data structure like a stack of pancakes. Stuff goes into the top and when you remove stuff off the top. Surprisingly, this simple data structure is really important for CPUs, langdev, and a lot of different areas in computer science.
+It's a data structure like a stack of pancakes. Stuff goes into and off the top. Surprisingly, this simple data structure is really important for CPUs, langdev, and a lot of different areas in computer science.
+
+The stack pointer points to the the top of the stack at the closest free memory address. The base pointer points to the bottom of the stack.
 
 It's so important, that many CPUs have dedicated instructions for manipulating the stack, typically variants of `PUSH` and `POP` to add and remove from the stack respectively. Something strange to understand is that the stack typically operates backwards(starts at higher memory addresses and works its way down). This means that the top of the stack is at the lowest memory address of the stack.
 
