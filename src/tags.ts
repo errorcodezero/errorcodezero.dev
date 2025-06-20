@@ -15,6 +15,10 @@ const tags = [
   ["devlog", "!text-ctp-red"],
   ["this", "!text-ctp-orange"],
   ["rust", "!text-ctp-orange"],
+  ["C", "!text-ctp-blue"],
+  ["low-level", "!text-ctp-red"],
+  ["emulation", "!text-ctp-green"],
+  ["langdev", "!text-ctp-orange"],
 ];
 
 export default tags;
