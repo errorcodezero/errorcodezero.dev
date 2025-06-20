@@ -115,7 +115,7 @@ Before I got into the code, I wanted to start by building an instruction set. Th
 
 It's a very simple instruction set by design. I wanted all the instructions to fit within a single hexadecimal digit.
 
-Some more details about the processor are that it has a 16-bit data bus. This means that the memory addresses themselves are 2 bytes. The word size(how much can be stored at a given memory address) is 8-bit since that's typically the norm with computers. However, this discrepancy in the word size and the data bus size means that in order for registers like the stack pointer to store a memory address, they need to be 2 bytes wide. That's why nearly all the registers are 2 bytes(except the status register). For the instructions to specify a register in their arguments, a set of register flags need to be created as well:
+Another detail about the processor is that it has a 16-bit data bus. This means that the memory addresses themselves are 2 bytes. The word size(how much can be stored at a given memory address) is 8-bit since that's typically the norm with computers. However, this discrepancy in the word size and the data bus size means that in order for registers like the stack pointer to store a memory address, they need to be 2 bytes wide. That's why nearly all the registers are 2 bytes(except the status register). For the instructions to specify a register in their arguments, a set of register flags need to be created as well:
 
 - `0x0` -> `RA_BYTE`               -> 1 byte to register A
 - `0x1` -> `RA_TWO_BYTES`          -> 2 bytes to register A
