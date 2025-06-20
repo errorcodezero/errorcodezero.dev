@@ -1,7 +1,7 @@
 ---
 title: "Building my CPU instructions set architecture and virtual machine"
 description: "A tale of building a CPU architecture, emulating it, and banging my head against the keyboard."
-pubDate: "June 17 2025"
+pubDate: "June 19 2025"
 categories: ["C", "low-level", "emulation", "langdev"]
 ---
 
