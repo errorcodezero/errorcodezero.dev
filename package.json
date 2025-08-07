@@ -21,7 +21,7 @@
     "@fontsource/geist-sans": "^5.2.5",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/typography": "^0.5.16",
-    "astro": "5.2.3",
+    "astro": "5.12.8",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
     "sharp": "^0.33.5",
