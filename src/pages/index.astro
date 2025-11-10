@@ -5,6 +5,9 @@ import { SITE_DESCRIPTION } from "~/consts";
 import Footer from "~/components/Footer.astro";
 import { Image } from "astro:assets";
 import coolerLogo from "~/assets/cooler_logo.svg";
+import button from "~/public/button.png";
+
+const code = "<a href=\"https://errorcodezero.dev/\"><img src=\"https://errorcodezero.dev/button.png\"></img></a>";
 ---
 
 <!doctype html>
@@ -29,10 +32,14 @@ import coolerLogo from "~/assets/cooler_logo.svg";
         <li>I'm looking for the next startup idea.</li>
         <li>I don't like repetition.</li>
       </ul>
+      <p>Add my button to your website by copying the following code block:</p>
+      <code>
+        {code}
+      </code>
       <iframe
         src="https://webring.hackclub.com/embed.html"
         width="90px"
-        height="60px"
+        height="80px"
         style="border: 0em;"></iframe>
       <Image
         src={coolerLogo}
@@ -40,6 +47,7 @@ import coolerLogo from "~/assets/cooler_logo.svg";
         loading="eager"
         width="500"
       />
+      <button><Image src={button} alt="ErrorCode0 Button"/></button>
     </main>
     <Footer />
   </body>
