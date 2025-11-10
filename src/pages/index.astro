@@ -5,9 +5,8 @@ import { SITE_DESCRIPTION } from "~/consts";
 import Footer from "~/components/Footer.astro";
 import { Image } from "astro:assets";
 import coolerLogo from "~/assets/cooler_logo.svg";
-import button from "~/public/button.png";
 
-const code = "<a href=\"https://errorcodezero.dev/\"><img src=\"https://errorcodezero.dev/button.png\"></img></a>";
+const code = "<a href=\"https://errorcodezero.dev/\"><img alt=\"ErrorCode0\" src=\"https://errorcodezero.dev/button.png\"></img></a>";
 ---
 
 <!doctype html>
@@ -47,7 +46,15 @@ const code = "<a href=\"https://errorcodezero.dev/\"><img src=\"https://errorcod
         loading="eager"
         width="500"
       />
-      <a href="/"><img src="/button.png" alt="ErrorCode0 Button"/></a>
+      <div class="flex">
+        <a href="/"><img src="/button.png" alt="ErrorCode0 Button"/></a>
+        <a href="https://bomberfish.ca">
+          <img src="https://bomberfish.ca/button.gif" alt="BomberFish" title="BomberFish" />
+        </a>
+        <a href="https://foxmoss.com">
+          <img src="https://foxmoss.com/foxmossbutton.png" alt="Foxmoss">
+        </a>
+      </div>
     </main>
     <Footer />
   </body>
