@@ -6,7 +6,8 @@ import Footer from "~/components/Footer.astro";
 import { Image } from "astro:assets";
 import coolerLogo from "~/assets/cooler_logo.svg";
 
-const code = "<a href=\"https://errorcodezero.dev/\"><img alt=\"ErrorCode0\" src=\"https://errorcodezero.dev/button.png\"></img></a>";
+const code =
+  '<a href="https://errorcodezero.dev/"><img alt="ErrorCode0" src="https://errorcodezero.dev/button.png"></img></a>';
 ---
 
 <!doctype html>
@@ -38,7 +39,7 @@ const code = "<a href=\"https://errorcodezero.dev/\"><img alt=\"ErrorCode0\" src
       <iframe
         src="https://scrobbly-doo.errorcodezero.dev/"
         height="85px"
-        width="700px"
+        width="400px"
         style="border: 0em; border-radius: 0.5em;"></iframe>
       <iframe
         src="https://webring.hackclub.com/embed.html"
@@ -52,12 +53,16 @@ const code = "<a href=\"https://errorcodezero.dev/\"><img alt=\"ErrorCode0\" src
         width="500"
       />
       <div class="flex">
-        <a href="/"><img src="/button.png" alt="ErrorCode0 Button"/></a>
+        <a href="/"><img src="/button.png" alt="ErrorCode0 Button" /></a>
         <a href="https://bomberfish.ca">
-          <img src="https://bomberfish.ca/button.gif" alt="BomberFish" title="BomberFish" />
+          <img
+            src="https://bomberfish.ca/button.gif"
+            alt="BomberFish"
+            title="BomberFish"
+          />
         </a>
         <a href="https://foxmoss.com">
-          <img src="https://foxmoss.com/foxmossbutton.png" alt="Foxmoss">
+          <img src="https://foxmoss.com/foxmossbutton.png" alt="Foxmoss" />
         </a>
       </div>
     </main>
