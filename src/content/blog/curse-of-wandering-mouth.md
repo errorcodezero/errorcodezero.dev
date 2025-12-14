@@ -24,7 +24,7 @@ and wondered what it said.
 For everytime it speaks its mind it tends to take a toll.
 
 Tis the curse of wandering mouth I wish I never had.
-A histrionic, a life of of flaunting, sometimes I wish my death.
+A histrionic, a life of flaunting, sometimes I wish my death.
 ```
 
 Written by me.
