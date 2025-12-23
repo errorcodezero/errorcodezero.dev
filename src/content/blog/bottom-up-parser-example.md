@@ -29,6 +29,21 @@ These rules are meant to be pretty simple and demonstrate how a bottom-up
 parser might work. Let's start with a string:
 `spicy savory hamburger and tasty sushi`
 
+## LR(k) Parsing
+
+An LR parser works by going through with *L*eft to right scanning and
+*R*ightmost derivation in reverse. Basically, it has a subset of the
+list of tokens being used, builds a tree off that, and then after building
+the tree up as high as possible, another token is added to the tree and the
+tree is further built. This is continued on until the list of elements is exhausted
+and tree has built up to a single root element.
+
+The k in LR(k) parsing is for lookahead and the number
+of tokens which are looked ahead at. Looking ahead can speed up
+parsing decisions but increases the complexity of the
+parser. For simplicity, we're gonna have a lookahead of zero.
+In other words, this is an LR(0) parser.
+
 ## Parsing time
 
 ```txt
