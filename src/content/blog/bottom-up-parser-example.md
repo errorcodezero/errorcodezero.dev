@@ -60,8 +60,8 @@ Let's start off with our first token in our string.
 spicy * savory hamburger
 ```
 
-Notice how we push the dot to the right to indicate that we've seen it. Here's
-where the R in LR parsing comes. Once something is to the left of our parser,
+Notice how we push the dot to the right to indicate that we've seen it. Once something
+is to the left of our parser,
 we want to update our tree to reflect the new addition.
 
 In this case, `spicy` is an `adjective` according to our grammar so we can mark
