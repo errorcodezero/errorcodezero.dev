@@ -19,6 +19,8 @@ const tags = [
   ["low-level", "!text-ctp-red"],
   ["emulation", "!text-ctp-green"],
   ["langdev", "!text-ctp-orange"],
+  ["parsing", "!text-ctp-mauve"],
+  ["compilers", "!text-ctp-lavender"],
   ["poetry", "!text-ctp-orange"],
   ["terza-rima", "!text-ctp-lavender"],
 ];
