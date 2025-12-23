@@ -10,7 +10,7 @@ This is going require some background knowledge.
 I'm assuming you know what a
 [context-free grammar](https://wikipedia.org/wiki/Context-free_grammar)
 is and have some understanding of what the job of a
-[parser](https://wikipedia.org/wiki/Parsing). This very specifically is
+[parser](https://wikipedia.org/wiki/Parsing) is. This very specifically is
 going to be using a simple version of an [LR parser](https://wikipedia.org/wiki/LR_parser)
 I'm going to jump right into this to help explain this.
 
