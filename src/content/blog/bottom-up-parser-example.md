@@ -151,4 +151,5 @@ adjective adjective  food
 ```
 
 As you can see, we managed to work our way from the bottom which is our string and
-all the way up to the root of the parse tree.
+all the way up to the root of the parse tree. With this finished parse tree, we can
+go on to create our stack.
