@@ -12,7 +12,6 @@ I'm assuming you know what a
 is and have some understanding of what the job of a
 [parser](https://wikipedia.org/wiki/Parsing) is. This very specifically is
 going to be using a simple version of an [LR parser](https://wikipedia.org/wiki/LR_parser)
-I'm going to jump right into this to help explain this.
 
 ## Start off: Defining Grammar
 
