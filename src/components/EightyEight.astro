@@ -1,0 +1,13 @@
+---
+import { buttons } from "./buttons";
+---
+
+<div class="flex">
+	{
+		buttons.map((button) => (
+			<a href={button.link}>
+				<img src={button.src} alt={button.alt} width={88} height={31} />
+			</a>
+		))
+	}
+</div>
