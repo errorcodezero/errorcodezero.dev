@@ -14,4 +14,8 @@ export const buttons = [{
 	src: "https://v1c.rocks/88x31.png",
 	link: "https://v1c.rocks",
 	alt: "Vic's Button",
+}, {
+	src: "https://github.com/aelithron/novatea/blob/main/public/88x31.gif?raw=true",
+	link: "https://novatea.dev",
+	alt: "Nova's Button",
 }];
