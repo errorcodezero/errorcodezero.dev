@@ -18,4 +18,8 @@ export const buttons = [{
 	src: "https://github.com/aelithron/novatea/blob/main/public/88x31.gif?raw=true",
 	link: "https://novatea.dev",
 	alt: "Nova's Button",
+}, {
+ src: "https://dwaitweb.vercel.app/button.jpg"
+ link: "https://dwaitweb.vercel.app",
+ alt: "Dwait's Button",
 }];
