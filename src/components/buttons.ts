@@ -22,4 +22,8 @@ export const buttons = [{
  src: "https://dwaitweb.vercel.app/button.jpg"
  link: "https://dwaitweb.vercel.app",
  alt: "Dwait's Button",
+}, {
+ src: "https://www.addy10s.xyz/addy88x31.png",
+ link: "https://www.addy10s.xyz/",
+ alt: "Addy's Button",
 }];
