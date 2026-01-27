@@ -6,15 +6,11 @@ import { getCollection } from "astro:content";
 import FormattedDate from "~/components/FormattedDate.astro";
 import Footer from "~/components/Footer.astro";
 
-let posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
-);
-posts = posts.reverse();
-for (let i = 0; i < posts.length; i++) {
-  if (posts[i].data.draft) {
-    posts.splice(i, 1);
-  }
-}
+const allPosts = await getCollection("blog");
+
+const posts = allPosts
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
@@ -25,17 +21,15 @@ for (let i = 0; i < posts.length; i++) {
   <body class="default">
     <Header />
     <main>
-      <h1 class="text-center pb-2">Blogs</h1>
+      <h1 class="page-title">Blogs</h1>
       <section>
-        <ul class="!pl-0.5 space-y-2">
+        <ul class="post-list">
           {
             posts.map((post) => (
-              <li class="pb-2 !list-none">
+              <li class="post-item">
                 <a href={`/blog/${post.slug}/`}>
-                  <p class="title">{post.data.title}</p>
-                  <p class="date">
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
+                  <p>{post.data.title}</p>
+                  <FormattedDate date={post.data.pubDate} />
                 </a>
               </li>
             ))
@@ -46,3 +40,23 @@ for (let i = 0; i < posts.length; i++) {
     <Footer />
   </body>
 </html>
+
+<style>
+  .page-title {
+    padding-bottom: 0.5em;
+  }
+
+  .post-list {
+    padding-left: 0.125em;
+    list-style-type: none;
+  }
+
+  .post-item + .post-item {
+    margin-top: 1em;
+  }
+
+  .post-item {
+    padding-bottom: 0.5em;
+    list-style: none;
+  }
+</style>

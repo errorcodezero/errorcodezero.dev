@@ -7,25 +7,44 @@ const { data } = Astro.props;
 import tags from "~/tags";
 ---
 
-<div class="flex flex-wrap space-x-1">
+<div class="tag-container">
   {
     data?.map((tag) => {
-      let tagColor = "!text-ctp-text";
+      let tagColor = "var(--ctp-blue)";
 
       for (let i = 0; i < tags.length; i++) {
         if (tags[i][0] === tag) {
-          tagColor = `${tags[i][1]}`;
+          tagColor = `var(--ctp-${tags[i][1]}`;
         }
       }
 
       return (
-        <a
-          href={`/tags/${tag}`}
-          class={`${tagColor} !no-underline bg-ctp-surface0 p-1.5 rounded-2xl pt-0.5 pb-0.5`}
-        >
+        <a href={`/tags/${tag}`} class="tag-pill" style={{ color: tagColor }}>
           #{tag}
         </a>
       );
     })
   }
 </div>
+
+<style>
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .tag-pill {
+    background-color: var(--ctp-surface0, #313244);
+    padding: 0.125rem 0.375rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: filter 0.2s;
+  }
+
+  .tag-pill:hover {
+    filter: brightness(1.1);
+  }
+</style>

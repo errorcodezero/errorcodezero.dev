@@ -4,17 +4,31 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
   <nav>
-    <div class="text-center pt-2">
-      <HeaderLink class="header_link" href="/">Home</HeaderLink>
-      <HeaderLink class="header_link" href="/blog">Blog</HeaderLink>
-      <HeaderLink class="header_link" href="/projects">Projects</HeaderLink>
+    <div class="nav-links">
+      <HeaderLink class="header-link" href="/">Home</HeaderLink>
+      <HeaderLink class="header-link" href="/blog">Blog</HeaderLink>
     </div>
   </nav>
-  <br />
 </header>
 
 <style>
-  .header_link {
-    @apply bg-ctp-blue text-ctp-surface0 hover:bg-ctp-surface0 hover:text-ctp-blue rounded-xl p-2 m-2 transition-all duration-300 !no-underline;
+  .nav-links {
+    text-align: center;
+  }
+
+  .header-link {
+    background-color: var(--ctp-blue);
+    color: var(--ctp-surface0);
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.25em;
+    border-radius: 0.75em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .header-link:hover {
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-blue);
   }
 </style>

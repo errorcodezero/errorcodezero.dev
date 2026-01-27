@@ -1,11 +1,151 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.default {
-  @apply prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl text-ctp-text bg-ctp-crust font-sans prose-code:font-mono prose-ul:list-disc prose-code:rounded-xl prose-blockquote:p-3 prose-blockquote:my-4 prose-blockquote:border-s-4 prose-blockquote:border-ctp-blue prose-blockquote:rounded-sm prose-blockquote:text-ctp-subtext0 prose-a:text-ctp-blue prose-code:overflow-hidden p-6 prose-ul:pl-7 prose-a:underline prose-ol:list-decimal prose-ol:pl-7;
+:root {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
 }
 
-.blog {
-  @apply space-y-4;
+body {
+  background-color: var(--ctp-crust);
+}
+
+.default {
+  color: var(--ctp-text);
+  background-color: var(--ctp-crust);
+  font-family: Geist Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 1.5rem;
+}
+
+.default h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.default h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.default h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.default h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.default a {
+  color: var(--ctp-blue);
+  text-decoration: underline;
+}
+
+.default ul {
+  list-style-type: disc;
+  padding-left: 1.75rem;
+}
+
+.default ol {
+  list-style-type: decimal;
+  padding-left: 1.75rem;
+}
+
+.default blockquote {
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-inline-start-width: 4px;
+  border-color: var(--ctp-blue);
+  border-radius: 0.125rem;
+  color: var(--ctp-subtext0);
+}
+
+/* Code Blocks */
+.default code {
+  font-family: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.blog>*+* {
+  margin-top: 1rem;
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none !important;
 }
