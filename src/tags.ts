@@ -23,6 +23,9 @@ const tags = [
   ["compilers", "!text-ctp-lavender"],
   ["poetry", "!text-ctp-orange"],
   ["terza-rima", "!text-ctp-lavender"],
+  ["reading", "!text-ctp-green"],
+  ["goals", "!text-ctp-rosewater"],
+  ["storytelling", "!text-ctp-green"],
 ];
 
 export default tags;

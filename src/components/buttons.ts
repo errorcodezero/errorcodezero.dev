@@ -19,11 +19,11 @@ export const buttons = [{
 	link: "https://novatea.dev",
 	alt: "Nova's Button",
 }, {
- src: "https://dwaitweb.vercel.app/button.jpg",
- link: "https://dwaitweb.vercel.app",
- alt: "Dwait's Button",
+	src: "https://www.dwait.dev/button.jpg",
+	link: "https://www.dwait.dev",
+	alt: "Dwait's Button",
 }, {
- src: "https://www.addy10s.xyz/addy88x31.png",
- link: "https://www.addy10s.xyz/",
- alt: "Addy's Button",
+	src: "https://www.addy10s.xyz/addy88x31.png",
+	link: "https://www.addy10s.xyz/",
+	alt: "Addy's Button",
 }];

@@ -10,6 +10,11 @@ let posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 posts = posts.reverse();
+for (let i = 0; i < posts.length; i++) {
+  if (posts[i].data.draft) {
+    posts.splice(i, 1);
+  }
+}
 ---
 
 <!doctype html>
