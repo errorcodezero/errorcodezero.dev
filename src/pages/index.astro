@@ -15,15 +15,38 @@ const code =
 <html lang="en">
   <head>
     <BaseHead title="Home" description={SITE_DESCRIPTION} />
+    <style>
+      .gradient-bar {
+        background: linear-gradient(
+          to right,
+          #d60270 0%,
+          #9b4f96 50%,
+          #0038a8 100%
+        );
+        height: 0.3em;
+        width: 12em;
+        margin: 0;
+        transition:
+          background-color 1s ease-out,
+          width 2s ease-out;
+      }
+      .gradient-bar:hover {
+        background: linear-gradient(
+          to right,
+          #d60270 0%,
+          #d60270 33.33%,
+          #9b4f96 33.33%,
+          #9b4f96 66.66%,
+          #0038a8 66.66%,
+          #0038a8 100%
+        );
+      }
+    </style>
   </head>
   <body class="default">
     <Header />
     <main>
       <h1>ErrorCode0</h1>
-      <div
-        style="background: linear-gradient(to right, #D60270 0%, #9B4F96 50%, #0038A8 100%); height: 0.2em; width: 12em; margin: 0;"
-      >
-      </div>
       <p>
         I'm a programmer from the US. Here are some interesting facts about me:
       </p>

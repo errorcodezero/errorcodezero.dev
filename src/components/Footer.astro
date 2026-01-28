@@ -1,8 +1,12 @@
 ---
 import { Icon } from "astro-icon/components";
+import GradientBar from "../components/GradientBar.astro";
 ---
 
 <footer class="footer-container">
+  <div class="gradient-bar-container">
+    <GradientBar />
+  </div>
   <div class="social-links">
     <a rel="me" href="https://github.com/errorcodezero" aria-label="Github">
       <Icon class="icon" name="mdi:github" />
@@ -30,20 +34,21 @@ import { Icon } from "astro-icon/components";
 </footer>
 
 <style>
-  .footer-container {
-    padding-top: 3rem;
+  .gradient-bar-container {
+    display: flex;
+    justify-content: center;
   }
 
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.5em;
     text-align: center;
   }
 
   .icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.5em;
+    height: 2.5em;
     display: block;
   }
 
