@@ -7,6 +7,8 @@ categories: ["storytelling"]
 draft: true
 ---
 
+This story is an attempt at creative writing and by no means reality.
+
 ```txt
 We are sophisticated creatures indeed.
 Moving across the world upon our noble steeds.
@@ -21,7 +23,7 @@ traces still lurk in every part of our being.
 > you're an a\*\*hole."
 >
 > \
-> \- Erica Albright from _The Social Network_ (2010)
+> —Erica Albright from _The Social Network_ (2010)
 
 That quote has always been one that's ripped through my flesh every time
 I hear it. For while I'm not the intended recipient, I've felt the burn of it
@@ -71,11 +73,41 @@ But at least history shall keep their actions in stone.
 > And I will pay more for that ability than for any other under the sun."
 >
 > \
-> \- John D. Rockefeller (1839-1937)
+> —John D. Rockefeller (1839-1937)
 
-Watching _The Social Network_ made me embody the true mentality of a capitalist
-, one Zuckerberg followed just as Rockefeller did before him. You have
+Watching _The Social Network_ made me embody the true mentality of a capitalist,
+one Zuckerberg followed just as Rockefeller did before him. You have
 to do anything to get what you want—whether that be the [railroad rebates
 of Standard Oil](https://en.wikipedia.org/wiki/Standard_Oil) or the
 [buy-or-bury tactics of Meta](https://www.ftc.gov/news-events/news/press-releases/2021/08/ftc-alleges-facebook-resorted-illegal-buy-or-bury-scheme-crush-competition-after-string-failed).
 Do you really want something if you're not willing to do anything for it?
+I gave the robber baron mindset a warm embrace and began to ponder what my
+enterprise might be. After all, I was just a high school freshman who
+hardly had an idea of how the world worked.
+
+Then, it hit me. At launch, Facebook was exclusively for Harvard students—a decision
+gave them some initial credibility while also allowing for a smaller area to test
+ideas. Harvard certainly boasted a large student population but it's definitely
+smaller than the whole world. It made perfect sense to set my sights on a little
+target before expanding to everyone else.
+
+But what would my idea be? I thought back to earlier in the movie where Zuckerberg
+built a "hot or not" style app called [Facemash](https://en.wikipedia.org/wiki/History_of_Facebook).
+It would show two Harvard women on screen and allow people to pick one over the
+other in order to rank them. The app went viral on the campus extremely quickly
+before it was taken down and he was summoned before the administrative board.
+
+I still remember hearing his witty answers to all their questions—a bit of hubris
+that like John Milton's Satan, made him all the more sympathetic. His near-defiance
+of the admin board almost led to his expulsion, yet he walked away with only six
+months of academic probation.
+
+While in no way did I support the idea behind Facemash, I couldn't deny that its
+execution was rather brilliant. The app went viral within hours of its launch—so
+much so that it crashed the college networks([at least in the movie](https://archive.blogs.harvard.edu/dlarochelle/2010/11/16/how-the-social-network-gets-it-wrong-facemash-and-the-dangerous-propagation-of-the-myth-of-network-scarcity/))
+Not to mention, an app which relied on the human feelings of attraction was
+interesting to me. What if I could make something based off a similar principle?
+The sacred nature of attraction—something so biologically innate and intimate—made
+it all the more fascinating to me.
+
+I finally had an idea and my fate was set in stone.
