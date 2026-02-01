@@ -9,13 +9,7 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.errorcodezero.dev",
-  integrations: [
-    mdx(),
-    sitemap(),
-    robotsTxt(),
-    icon(),
-    partytown(),
-  ],
+  integrations: [mdx(), sitemap(), robotsTxt(), icon(), partytown()],
   markdown: {
     shikiConfig: {
       theme: "catppuccin-mocha",
