@@ -29,9 +29,9 @@ That quote has always been one that's ripped through my flesh every time
 I hear it. For while I'm not the intended recipient, I've felt the burn of it
 nonetheless. No movie will ever have more of a lasting impact on my psyche than
 _The Social Network_ and I strongly believe it's one of the greatest
-computer science movies of all time. It's based the true story of
-the founding of Facebook(There's no chance I'm calling it Meta.) and is a tale of
-stolen ideas, Silicon Valley culture, and the betrayal of a co-founder who
+computer science movies of all time. It's based on the true story of
+the founding of Facebook and is a tale of stolen ideas,
+Silicon Valley culture, and the betrayal of a co-founder who
 couldn't keep up with it all. The iconic tagline bears a permanent engraving
 in my mind.
 
@@ -43,12 +43,13 @@ Clearly, nobody should look up to this story as inspiring or something they
 should see themselves in. If anything, that would hint at them having problems
 —and we wouldn't want that would we?
 
-But I was obsessed with this character. It felt almost like the romanticized view
-of Satan which John Milton uses in _Paradise Lost_. Milton's Satan was unlike any
-Satan which came before him as he was given an almost sympathetic cause. He seemed
-less like the embodiment of evil and misfortune and more like a rebel who wished
-to have autonomy rather than be subservient to the will of God. The famous quote
-from _Paradise Lost_ being:
+But I was obsessed with his character. It felt almost like the view
+of Satan which [Romantics](https://en.wikipedia.org/wiki/Romanticism)
+interpret from John Milton's _Paradise Lost_. Milton's
+Satan was unlike any Satan which came before him as he was given an almost sympathetic
+cause. He seemed less like the embodiment of evil and misfortune and more like a
+rebel who wished to have autonomy rather than be subservient to the will of God.
+The famous quote from _Paradise Lost_ being:
 
 > "Better to reign in Hell than to serve in Heaven"
 
@@ -104,10 +105,34 @@ months of academic probation.
 
 While in no way did I support the idea behind Facemash, I couldn't deny that its
 execution was rather brilliant. The app went viral within hours of its launch—so
-much so that it crashed the college networks([at least in the movie](https://archive.blogs.harvard.edu/dlarochelle/2010/11/16/how-the-social-network-gets-it-wrong-facemash-and-the-dangerous-propagation-of-the-myth-of-network-scarcity/))
+much so that it crashed the college networks ([at least in the movie](https://archive.blogs.harvard.edu/dlarochelle/2010/11/16/how-the-social-network-gets-it-wrong-facemash-and-the-dangerous-propagation-of-the-myth-of-network-scarcity/))
 Not to mention, an app which relied on the human feelings of attraction was
 interesting to me. What if I could make something based off a similar principle?
 The sacred nature of attraction—something so biologically innate and intimate—made
 it all the more fascinating to me.
 
 I finally had an idea and my fate was set in stone.
+
+## Romanticizing Romance
+
+```txt
+Toiling labor finally brought alive:
+A product of years taken from his life.
+Yet forsaken boundaries leading to strife,
+would later be his own demise.
+```
+
+The irony of building a dating app to commercialize romance is that it seems like
+the very thing that Romantics would be against. After all, Romantic literature—say
+_Frankenstein_ by Mary Shelley—typically portrayed the negatives of human innovation.
+
+In _Frankenstein_, we hear the story of Victor Frankenstein: a scientist who creates
+a monster fashioned from the remains of corpses and has to deal with the consequences.
+And yes, Frankenstein is the name of the scientist rather than the monster as Halloween
+propaganda would like you to believe.
+
+I felt much like Victor when I began work on the project; however, I
+remained blissfully unaware that my creation would begin to mirror his
+in far more ways than in its development.
+
+But never mind that now for I have my own creation to construct.
