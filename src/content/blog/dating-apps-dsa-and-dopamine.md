@@ -172,5 +172,5 @@ to proceed. Now, I had to work on implementing the remaining features.
 I was able to quickly implement a bare-bones prototype—one which I will spare you
 the details of. At this point in time, I knew I had progressed far as I had
 completed nearly every necessary step for the project. Crucially however, I ignored
-the most vital and elusive component of my enterprise: the algorithm—the brains
-to my creature.
+the most vital and elusive component of my enterprise: the algorithm—the brain
+for my creature.
