@@ -126,8 +126,8 @@ The irony of building a dating app to commercialize romance is that it seems lik
 the very thing that Romantics would be against. After all, Romantic literature—say
 _Frankenstein_ by Mary Shelley—typically portrayed the negatives of human innovation.
 
-In _Frankenstein_, we hear the story of Victor Frankenstein: a scientist who creates
-a monster fashioned from the remains of corpses and has to deal with the consequences.
+In _Frankenstein_, we hear the story of Victor Frankenstein: a scientist who created
+a monster fashioned from the remains of corpses and had to deal with the consequences.
 And yes, Frankenstein is the name of the scientist rather than the monster as Halloween
 propaganda would like you to believe.
 
