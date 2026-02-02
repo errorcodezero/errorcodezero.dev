@@ -105,7 +105,7 @@ months of academic probation.
 
 While in no way did I support the idea behind Facemash, I couldn't deny that its
 execution was rather brilliant. The app went viral within hours of its launch—so
-much so that it crashed the college networks ([at least in the movie](https://archive.blogs.harvard.edu/dlarochelle/2010/11/16/how-the-social-network-gets-it-wrong-facemash-and-the-dangerous-propagation-of-the-myth-of-network-scarcity/))
+much so that it crashed the college networks ([at least in the movie](https://archive.blogs.harvard.edu/dlarochelle/2010/11/16/how-the-social-network-gets-it-wrong-facemash-and-the-dangerous-propagation-of-the-myth-of-network-scarcity/)).
 Not to mention, an app which relied on the human feelings of attraction was
 interesting to me. What if I could make something based off a similar principle?
 The sacred nature of attraction—something so biologically innate and intimate—made
@@ -122,6 +122,11 @@ Yet forsaken boundaries leading to strife,
 would later be his own demise.
 ```
 
+> "What can stop the determined heart and resolved will of man?"
+>
+> \
+> —Robert Walton (_Frankenstein_ (1818) by Mary Shelley (1797-1851))
+
 The irony of building a dating app to commercialize romance is that it seems like
 the very thing that Romantics would be against. After all, Romantic literature—say
 _Frankenstein_ by Mary Shelley—typically portrayed the negatives of human innovation.
@@ -135,4 +140,37 @@ I felt much like Victor when I began work on the project; however, I
 remained blissfully unaware that my creation would begin to mirror his
 in far more ways than in its development.
 
-But never mind that now for I have my own creation to construct.
+But never mind that, for I had an idea to build. Before I could get to building,
+however, I needed to refine my idea down to exactly what features I wished to develop.
+
+The primary idea was simple: the app would operate like Tinder in which you
+could swipe left or right based on your preference for a given profile. If you
+accepted a profile, that person would then be available to chat with—thereafter,
+the progression would be entirely up to you. A very basic take on the concept
+of a dating app.
+
+Beyond just the core functionality however, I also needed to address the
+administrative aspects—such as how I would prevent people who aren't students
+in my school from using the service. Zuckerberg initially made Facebook
+exclusive by requiring [harvard.edu](https://harvard.edu) email addresses for users.
+I felt a bit doubtful however that my school would have been quite so gracious
+as to allow their students to sign up for a dating app using their school email.
+
+So rather, I decided to think a bit outside the box. What if I could still make
+use of the student emails? What if the students emailed me? With that line of thinking,
+I came up with my brilliant scheme to verify students without the school catching
+me: On sign up, I would give a student a special set of code words for verification
+(an example might be "`apple banana coffee monkey zoo`"). Now all they would need
+to do is simply email this phrase from their school email to my school email address
+to which I set up a mail client to act as a silent sentinel, constantly scanning
+my inbox for these incoming phrases. Upon receiving the correct phrase, it would
+finally grant entry on the website.
+
+With the verification problem solved, I laid the foundation of what would be necessary
+to proceed. Now, I had to work on implementing the remaining features.
+
+I was able to quickly implement a bare-bones prototype—one which I will spare you
+the details of. At this point in time, I knew I had progressed far as I had
+completed nearly every necessary step for the project. Crucially however, I ignored
+the most vital and elusive component of my enterprise: the algorithm—the brains
+to my creature.
