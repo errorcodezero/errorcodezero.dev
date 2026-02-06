@@ -1,8 +1,8 @@
 ---
 title: "Dating Apps, Data Structures, and Dopamine"
 description: "A tale of app building."
-pubDate: "Jan 31 2026"
-updatedDate: "Jan 31 2026"
+pubDate: "Feb 6 2026"
+updatedDate: "Feb 6 2026"
 categories: ["storytelling"]
 draft: true
 ---
