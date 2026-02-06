@@ -70,11 +70,11 @@ It takes us all to hold those to atone.
 But at least history shall keep their actions in stone.
 ```
 
-> "The ability to deal with people is as purchasable a commodity as sugar or coffee.
-> And I will pay more for that ability than for any other under the sun."
->
-> \
-> —John D. Rockefeller (1839-1937)
+<!-- > "The ability to deal with people is as purchasable a commodity as sugar or coffee. -->
+<!-- > And I will pay more for that ability than for any other under the sun." -->
+<!-- > -->
+<!-- > \ -->
+<!-- > —John D. Rockefeller (1839-1937) -->
 
 Watching _The Social Network_ made me embody the true mentality of a capitalist,
 one Zuckerberg followed just as Rockefeller did before him. You have
@@ -122,10 +122,10 @@ Yet forsaken boundaries leading to strife,
 would later be his own demise.
 ```
 
-> "What can stop the determined heart and resolved will of man?"
->
-> \
-> —Robert Walton (_Frankenstein_ (1818) by Mary Shelley (1797-1851))
+<!-- > "What can stop the determined heart and resolved will of man?" -->
+<!-- > -->
+<!-- > \ -->
+<!-- > —Robert Walton (_Frankenstein_ (1818) by Mary Shelley (1797-1851)) -->
 
 The irony of building a dating app to commercialize romance is that it seems like
 the very thing that Romantics would be against. After all, Romantic literature—say
@@ -174,3 +174,27 @@ the details of. At this point in time, I knew I had progressed far as I had
 completed nearly every necessary step for the project. Crucially however, I ignored
 the most vital and elusive component of my enterprise: the algorithm—the brain
 for my creature.
+
+## Algorithmic Adventure
+
+```txt
+The final touch needed inside,
+For this great beast to come alive.
+Yet should I take this final stride?
+Or stop it now should havoc arise.
+```
+
+By this point, I had been consistently working the project for about two
+weeks—a lifetime compared to the smaller ventures I whipped up over weekends. I
+was about through with all the little housekeeping items needed for the project
+and finally ready to take on the biggest challenge of the development. I began
+to grow obsessed with the project and found that refining every aspect of it
+started to eat into much of my time. I often daydreamed about being the leader
+of organized crime—the dating don if you will.
+
+I vividly remember one scene I played out in my head. I was sitting in class
+as any good mob boss would, smoking an expensive cuban cigar the thickness of
+my finger. This magical cigar and its smoke were completely invisible to the class
+as its existence was purely for projecting gravitas. On my wrist was a handcrafted
+watch beautifully decorated in white gold and diamonds—a piece worth over double
+your father's retirement fund.

@@ -29,6 +29,8 @@
 
 body {
   background-color: var(--ctp-crust);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .default {
