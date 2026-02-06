@@ -23,13 +23,18 @@ import Tags from "../components/Tags.astro";
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
+    <style>
+      .top {
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
 
   <body class="default">
     <Header />
     <main>
       <article>
-        <div class="space-y-2">
+        <div class="top">
           <div>
             {
               heroImage && (
@@ -58,7 +63,6 @@ import Tags from "../components/Tags.astro";
           <slot />
         </div>
       </article>
-      <div class="p-4"></div>
       <script
         is:inline
         src="https://giscus.app/client.js"

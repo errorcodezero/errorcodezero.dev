@@ -8,6 +8,7 @@ draft: true
 ---
 
 This story is an attempt at creative writing and by no means reality.
+The views and actions reflected in this piece do not represent my own.
 
 ```txt
 We are sophisticated creatures indeed.
