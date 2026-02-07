@@ -199,3 +199,9 @@ my finger. This magical cigar and its smoke were completely invisible to the cla
 as its existence was purely for projecting gravitas. On my wrist was a handcrafted
 watch beautifully decorated in white gold and diamonds—a piece worth over double
 your father's retirement fund.
+
+As I puffed on my cigar—paying little attention to the math lesson that was being
+taught—the school public announcement system crackled with a request for my presence
+in the administrator's office. I sighed and ashed the remains of my cigar onto
+the desk, blackening the wood. I got up from my seat and walked to the office as
+calm and collected as could be.
