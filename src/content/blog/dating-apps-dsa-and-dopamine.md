@@ -204,4 +204,31 @@ As I puffed on my cigar—paying little attention to the math lesson that was be
 taught—the school public announcement system crackled with a request for my presence
 in the administrator's office. I sighed and ashed the remains of my cigar onto
 the desk, blackening the wood. I got up from my seat and walked to the office as
-calm and collected as could be.
+calm and collected as could be. As I was getting there, my mind was racing with
+all the different possibilities of why I was being called there. Not that I was
+worried—merely curious. I stepped into the administration building and went up
+to the front desk. The woman behind the desk worked in silence, her expression
+lacking even a trace of joy. I went in front of her desk, my tall figure
+overshadowing her.
+
+"I was called to the principal's office?", I asked, yet I knew the answer.
+
+"Right this way," she replied in a monotone voice. She rose from her chair
+and began walking briskly through the hallway towards one of the rooms, as if
+she were late for an appointment. As she walked past one of the doors, she stopped
+abruptly and knocked on it before proceeding to open it.
+
+"Sir, I have someone for you."
+
+"Let him in.", I heard in a cold and calculated voice. Inside, I was greeted with
+a short stubby man who looked at me in disgust. "Take a seat," he grunted as I pulled
+out a chair. "To what do I owe the pleasure of speaking with you?" I smirked, leaning
+back in confidence.
+
+"I know what you've been up to" he trembled in what seemed like rage and disbelief,
+"I've heard about this dating app and I know you're the ringleader behind it." I
+laughed at his accusation, as if he had just told me the best joke in the world.
+"That's a good one." I reached into my pocket and pulled out a cigar—a strategic
+show of power to let our little school administrator understand my hand at play.
+He stared at me in shock, having expected a confession or even a beg for mercy;
+instead he saw his rehearsed confrontation put to shame.
