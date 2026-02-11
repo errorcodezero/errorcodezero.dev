@@ -61,6 +61,10 @@ body {
   line-height: 1.75rem;
 }
 
+.default p {
+  font-size: 1.2rem;
+}
+
 .default a {
   color: var(--ctp-blue);
   text-decoration: underline;
@@ -91,11 +95,13 @@ body {
   font-family: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   border-radius: 0.75rem;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 .default pre {
   padding: 1em;
   border-radius: 0.5em;
+  font-size: 1.2rem;
 }
 
 .blog>*+* {
