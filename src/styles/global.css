@@ -65,6 +65,10 @@ body {
   font-size: 1.2rem;
 }
 
+.default li {
+  font-size: 1.2rem;
+}
+
 .default a {
   color: var(--ctp-blue);
   text-decoration: underline;
