@@ -232,3 +232,18 @@ laughed at his accusation, as if he had just told me the best joke in the world.
 show of power to let our little school administrator understand my hand at play.
 He stared at me in shock, having expected a confession or even a beg for mercy;
 instead he saw his rehearsed confrontation put to shame.
+
+I sparked the cigar as he watched in stunned silence. "T-This isn't over," he stumbled
+over his words as if he were speaking English for the first time in his life.
+Before he could stammer another empty threat, I exhaled a cloud of smoke in his
+face from my cigar—leaving him coughing as the smoke of ambition enveloped the room.
+I got up from my chair and walked out with the cigar resting firmly in my
+mouth—as a gravestone would be in a cemetery.
+
+It was fantasies like this that fueled my ambition—narratives I reenacted in my
+head as if I were a director, resting my fate in prose and cinema. After all, how
+else was I to remain motivated while slaving away tirelessly at the algorithm?
+
+I found during the process that my knowledge needed to pull off this feat was
+severely lacking. I had a clear idea in my head, yet I found myself unable to
+render that vision in code.
