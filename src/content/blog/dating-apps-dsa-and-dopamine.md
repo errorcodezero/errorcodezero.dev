@@ -247,3 +247,5 @@ else was I to remain motivated while slaving away tirelessly at the algorithm?
 I found during the process that my knowledge needed to pull off this feat was
 severely lacking. I had a clear idea in my head, yet I found myself unable to
 render that vision in code.
+
+## Dr. Data Structure
