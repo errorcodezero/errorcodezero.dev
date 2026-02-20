@@ -248,4 +248,10 @@ I found during the process that my knowledge needed to pull off this feat was
 severely lacking. I had a clear idea in my head, yet I found myself unable to
 render that vision in code.
 
-## Dr. Data Structure
+## Deus Ex Machina
+
+With my fantasies etched into my head, I embarked on the journey to acquire
+the skills needed for building my masterpiece. At this point, I hardly had a solid
+understanding of computer science as I barely had any projects under my belt.
+To make a leap from simple websites to a fully fledged dating app algorithm would
+require a miracle job—divine intervention, even.
