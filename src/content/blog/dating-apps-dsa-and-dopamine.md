@@ -277,14 +277,17 @@ closer and closer. Every bit of research had come down to this moment: I finally
 figured out the missing part the algorithm.
 
 A perfect algorithm would create precise pairs of people engineered to last. However,
-perfection would mean losing valuable users with every scroll or effectively bleeding
-myself to death. A bad algorithm had opposite results: it would struggle to pair
-together people who would be right for one another. I needed a concotion right in
-middle which would work just enough to give them hope yet not enough to truly help
-them find love.
+perfection would mean losing valuable users with every scroll—effectively bleeding
+my enterprise to death. A bad algorithm would have opposite results: it would
+fail to keep people interested at all. I needed a concoction right in the middle
+which would work just enough to give them hope yet not enough to truly help them
+find love.
 
-I needed to hijack their dopamine reward system to keep them scrolling, dangling
-the prospects of a relationship just close enough for them to think it's possible.
+I needed to hijack their dopamine reward system to keep them scrolling—dangling
+the prospects of romance just close enough for them to keep scrolling, yet right
+out of reach.
+
+More is going to be added; I just did the finale early.
 
 ## Finale
 
