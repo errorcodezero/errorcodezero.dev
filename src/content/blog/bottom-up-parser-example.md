@@ -132,7 +132,7 @@ adjective adjective   food
 
 We can use the same rule as before to simplify even further and reach our final result.
 
-```txt
+```txt scroll
           lunch
           /   \
          /     \
@@ -152,3 +152,10 @@ adjective adjective  food
 As you can see, we managed to work our way from the bottom which is our string and
 all the way up to the root of the parse tree. With this finished parse tree, we can
 go on to create our stack.
+
+<style>
+    .default pre {
+        white-space: pre;
+        overflow-x: auto;  
+    }
+</style>

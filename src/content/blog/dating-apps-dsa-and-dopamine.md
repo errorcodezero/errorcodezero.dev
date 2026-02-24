@@ -1,8 +1,8 @@
 ---
 title: "Dating Apps, Data Structures, and Dopamine"
 description: "A tale of app building."
-pubDate: "Feb 6 2026"
-updatedDate: "Feb 6 2026"
+pubDate: "Feb 24 2026"
+updatedDate: "Feb 24 2026"
 categories: ["storytelling"]
 draft: true
 ---
@@ -250,8 +250,84 @@ render that vision in code.
 
 ## Deus Ex Machina
 
+```
+Such craft could never be from man alone,
+for the scent reeks of the divine unknown.
+As sharp as a knife sharpened from whetstone,
+how it came to fruition remains unbeknownst.
+```
+
 With my fantasies etched into my head, I embarked on the journey to acquire
 the skills needed for building my masterpiece. At this point, I hardly had a solid
 understanding of computer science as I barely had any projects under my belt.
 To make a leap from simple websites to a fully fledged dating app algorithm would
 require a miracle job—divine intervention, even.
+
+I remember the moment the algorithmic breakthrough came to me like it was yesterday.
+It was a Saturday and I spent nearly the entire day on researching data structures
+and algorithms—changing my focus for only the bare minimum needed
+to sustain myself. I went to bed Sunday at 2 a.m. having immersed myself in my study
+for so long. It was difficult to sleep that night as my dreams engaged in algorithmic
+fantasies, leaving me tossing and turning thinking about how I would bring my creation
+to life.
+
+At exactly 5:06 a.m., I shot out of bed with my Eureka moment, shivering with ambition.
+The feat of quantifying the nature of romance itself was within my reach and I climbed
+closer and closer.
+
+## Unforeseen Consequences
+
+```txt
+-- Tape Starts --
+
+[[hack1]] Good evening Mr. [[name]].
+
+[Subject] What's going on?
+
+[[hack1]] I'm afraid I'm not at... liberty to elaborate.
+
+-- Tape Ends --
+```
+
+<script>
+    const glitchConfig = [
+        { term: "[hack1]",   color: "var(--ctp-red)" },
+        { term: "[name]",   color: "var(--ctp-blue)" }
+    ];
+
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*<>[]{}";
+    const preElements = document.querySelectorAll('pre');
+
+    preElements.forEach(pre => {
+        let html = pre.innerHTML;
+        
+        glitchConfig.forEach((item, index) => {
+            const escapedTerm = item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(escapedTerm, 'g');
+            
+            html = html.replace(regex, 
+                `<span class="glitch-item" data-index="${index}" style="color: ${item.color}; font-family: monospace; font-weight: bold;">${item.term}</span>`
+            );
+        });
+        
+        pre.innerHTML = html;
+    });
+
+    const targets = document.querySelectorAll('.glitch-item');
+
+    if (targets.length > 0) {
+        setInterval(() => {
+            targets.forEach(el => {
+                const configIndex = el.getAttribute('data-index');
+                const originalTerm = glitchConfig[configIndex].term;
+                
+                let randomString = "";
+                for (let i = 0; i < originalTerm.length; i++) {
+                    randomString += chars[Math.floor(Math.random() * chars.length)];
+                }
+                
+                el.textContent = randomString;
+            });
+        }, 60);
+    }
+</script>
