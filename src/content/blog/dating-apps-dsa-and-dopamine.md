@@ -250,7 +250,7 @@ render that vision in code.
 
 ## Deus Ex Machina
 
-```
+```txt
 Such craft could never be from man alone,
 for the scent reeks of the divine unknown.
 As sharp as a knife sharpened from whetstone,
@@ -273,25 +273,65 @@ to life.
 
 At exactly 5:06 a.m., I shot out of bed with my Eureka moment, shivering with ambition.
 The feat of quantifying the nature of romance itself was within my reach and I climbed
-closer and closer.
+closer and closer. Every bit of research had come down to this moment: I finally
+figured out the missing part the algorithm.
 
-## Unforeseen Consequences
+A perfect algorithm would create precise pairs of people engineered to last. However,
+perfection would mean losing valuable users with every scroll or effectively bleeding
+myself to death. A bad algorithm had opposite results: it would struggle to pair
+together people who would be right for one another. I needed a concotion right in
+middle which would work just enough to give them hope yet not enough to truly help
+them find love.
+
+I needed to hijack their dopamine reward system to keep them scrolling, dangling
+the prospects of a relationship just close enough for them to think it's possible.
+
+## Finale
 
 ```txt
--- Tape Starts --
-
-[[hack1]] Good evening Mr. [[name]].
+[[hack1]] Good evening, Mr. [name].
 
 [Subject] What's going on?
 
-[[hack1]] I'm afraid I'm not at... liberty to elaborate.
+[[hack1]] I'm afraid I'm not at... liberty to elaborate. However, I do believe that you're... well aware of your actions leading up to our interaction, Mr. [name].
 
--- Tape Ends --
+[Subject] ... I don't know what you're referring to.
+
+[[hack1]] Lying to me is not... in your best interest, Mr. [name] for I wish not to act... against you. Quite on the... contrary. Before I give you... my offer, I must ask you a few questions.
+
+[Subject] What do you want?
+
+[[hack1]] What lead you to create [dating app], Mr. [name]?
+
+[Subject] I wanted to be a king and to claim my seat among the heavens. It wasn't for the money nor the power but rather...
+
+[[hack1]] Rather what, Mr. [name]?
+
+[Subject] I couldn't describe it even if I wanted to. It forwent all reasoning and logic and appealed to the deepest most animalistic desires of mine.
+
+[[hack1]] Were you aware of the... consequences that would arise from the... creation of [dating app], Mr. [name]?
+
+[Subject] I certainly wasn't unaware. I knew in the back of my mind that my creation could come with dire repurcussions, yet I never was able to truly envision it. All I could think about was the progress I made on its inception.
+
+[[hack1]] Were your actions worth it, Mr. [name]?
+
+[Subject] Most certainly not. They've caused nothing but unimaginable suffering and I regret everything I've done.
+
+[[hack1]] I understand, Mr. [name]. Now I'd like to bid you an offer before we... part ways. I would like to offer you the opportunity to have your record... expunged. Every last trace of what has happened shall... disappear, as if it were data being overwritten with zeroes.
+
+[Subject] What must I do to redeem this?
+
+[[hack1]] You've already fulfilled my... expectations, Mr. [name]. Do you accept?
+
+[Subject] I'm sorry but I cannot accept this. I do not wish to have another's fate but rather my own. I craft a future of my own making and not that of which was sanatized on a whim. Everything I was made me everything I am. I embrace my past with open arms and I will never let you take that from me. I will never lose who I am even if I lose everything else. Begone foul demon!
+
+[[hack1]] If that's the case, I bid you farewell. Good night, Mr. [name]. I hope you are satisfied with your choice.
 ```
 
 <script>
     const glitchConfig = [
         { term: "[hack1]",   color: "var(--ctp-red)" },
+        { term: "[dating app]",   color: "var(--ctp-green)" },
         { term: "[name]",   color: "var(--ctp-blue)" }
     ];
 
@@ -300,16 +340,13 @@ closer and closer.
 
     preElements.forEach(pre => {
         let html = pre.innerHTML;
-        
         glitchConfig.forEach((item, index) => {
             const escapedTerm = item.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const regex = new RegExp(escapedTerm, 'g');
-            
-            html = html.replace(regex, 
+            html = html.replace(regex,
                 `<span class="glitch-item" data-index="${index}" style="color: ${item.color}; font-family: monospace; font-weight: bold;">${item.term}</span>`
             );
         });
-        
         pre.innerHTML = html;
     });
 
@@ -320,12 +357,10 @@ closer and closer.
             targets.forEach(el => {
                 const configIndex = el.getAttribute('data-index');
                 const originalTerm = glitchConfig[configIndex].term;
-                
                 let randomString = "";
                 for (let i = 0; i < originalTerm.length; i++) {
                     randomString += chars[Math.floor(Math.random() * chars.length)];
                 }
-                
                 el.textContent = randomString;
             });
         }, 60);
