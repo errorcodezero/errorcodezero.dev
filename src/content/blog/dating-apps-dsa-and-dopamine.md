@@ -1,8 +1,8 @@
 ---
 title: "Dating Apps, Data Structures, and Dopamine"
 description: "A tale of app building."
-pubDate: "Feb 24 2026"
-updatedDate: "Feb 24 2026"
+pubDate: "Feb 26 2026"
+updatedDate: "Feb 26 2026"
 categories: ["storytelling"]
 draft: true
 ---
@@ -283,11 +283,23 @@ fail to keep people interested at all. I needed a concoction right in the middle
 which would work just enough to give them hope yet not enough to truly help them
 find love.
 
-I needed to hijack their dopamine reward system to keep them scrolling—dangling
-the prospects of romance just close enough for them to keep scrolling, yet right
-out of reach.
+I needed to hijack their dopamine reward system to keep them swiping—dangling
+the prospects of romance just close enough to captivate them, yet right
+out of reach. I needed to grow intimately familiar with the science of addiction.
 
-More is going to be added; I just did the finale early.
+Just like slot machines, users don't get what they want each time. After all,
+what good machine gave jackpots every time? That would be boring and financial
+suicide. In reality, a good slot machine doesn't give payouts predictably and rather
+keeps users hooked from the mystery of what the result could be of each pull.
+
+And of course these idiots had it coming. Who in their right mind would want
+to use a dating app for high school students? To make it better, I figured I
+needed some more user data. Do you really want something if you're not willing
+to do anything for it?
+
+My epiphany gave me the chilling realization that I couldn't rely on just data from
+swipes. I needed to go far deeper. I went back to bed and again woke up at
+1:54 p.m, ambition coursing through my veins.
 
 ## Finale
 
@@ -326,9 +338,9 @@ More is going to be added; I just did the finale early.
 
 [[hack1]] You've already fulfilled my... expectations, Mr. [name]. Do you accept?
 
-[Subject] I'm sorry but I cannot accept this. I do not wish to have another's fate but rather my own. I craft a future of my own making and not that of which was sanatized on a whim. Everything I was made me everything I am. I embrace my past with open arms and I will never let you take that from me. I will never lose who I am even if I lose everything else. Begone foul demon!
+[Subject] I.. cannot accept this. I'm sorry. To give up my past would be to give up my own life. I can't lose sight of who I once was. I cannot accept your offer.
 
-[[hack1]] If that's the case, I bid you farewell. Good night, Mr. [name]. I hope you are satisfied with your choice.
+[[hack1]] I had not been... expecting that of you. But, if that's the case, I bid you farewell. Good night, Mr. [name]. I hope you are satisfied with your choice.
 ```
 
 <script>
