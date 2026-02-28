@@ -301,6 +301,29 @@ My epiphany gave me the chilling realization that I couldn't rely on just data f
 swipes. I needed to go far deeper. I went back to bed and again woke up at
 1:54 p.m, ambition coursing through my veins.
 
+Making the already daunting task of an algorithm harder, I decided to add an Instagram
+scraper to the app. The idea is that it would find people's Instagram profiles and
+map out social circles using the statistics of followers, following, comments, etc.
+Is it creepy to scrape all of this without people's knowledge or not even
+needing them to provide their Instagram details? Perhaps. But I couldn't care
+less. These farm animals don't deserve privacy anyways.
+
+It's better to be a wolf in sheep's clothing than to be led to the slaughterhouse
+for that matter. I didn't debate even for a second on what others might consider
+a moral dilemma. I pushed through on the algorithm for nearly weeks on end,
+making my weekday routine devolve down to homework and then dating app work.
+
+I slaved away day and night, chained to my computer as each line of code loosened
+the shackles bit by bit. Finally, at 3 a.m. on a Sunday, the chains shattered—
+the links scattering brilliantly across the floor of the dark room.
+I lifted my hands as a free man in utter disbelief: Was there
+anything I had forgotten? After double—no triple checking that everything was in
+order, I sighed in relief.
+
+My hideous progeny was finally alive. I could finally rest. I leaned back in my
+chair and sparked my cigar—tainting the pure air with the smoke of sin. How could
+there be such beauty in immorality?
+
 ## Finale
 
 ```txt
