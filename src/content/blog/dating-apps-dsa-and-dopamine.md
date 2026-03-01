@@ -377,7 +377,7 @@ my eyes and took the leap of faith onto the cold, hard earth.
 
 [Subject] What do you want?
 
-[[g-man]] What lead you to create [dating app], Mr. [name]?
+[[g-man]] What led you to create [dating app], Mr. [name]?
 
 [Subject] I wanted to be a king and to claim my seat among the heavens. It wasn't for the money nor the power but rather...
 
@@ -385,7 +385,7 @@ my eyes and took the leap of faith onto the cold, hard earth.
 
 [Subject] I couldn't describe it even if I wanted to. It forwent all reasoning and logic and appealed to the deepest most animalistic desires of mine.
 
-[[g-man]] Were you aware of the... consequences that would arise from the... creation of [dating app], Mr. [name]?
+[[g-man]] Were you aware of the... consequences might have arisen from the... creation of [dating app], Mr. [name]?
 
 [Subject] I certainly wasn't unaware. I knew in the back of my mind that my creation could come with dire repercussions. Yet I never was able to truly envision it. All I could think about was the twisted fantasy in my head.
 
