@@ -23,7 +23,7 @@ export const buttons = [{
 	link: "https://www.dwait.dev",
 	alt: "Dwait's Button",
 }, {
-	src: "https://www.addy10s.xyz/addy88x31.png",
+	src: "https://www.addy10s.xyz/addy88x31.gif",
 	link: "https://www.addy10s.xyz/",
 	alt: "Addy's Button",
 }];

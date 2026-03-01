@@ -1,8 +1,8 @@
 ---
 title: "Dating Apps, Data Structures, and Dopamine"
 description: "A tale of app building."
-pubDate: "Feb 26 2026"
-updatedDate: "Feb 26 2026"
+pubDate: "Feb 28 2026"
+updatedDate: "Feb 28 2026"
 categories: ["storytelling"]
 draft: true
 ---
@@ -254,7 +254,7 @@ render that vision in code.
 Such craft could never be from man alone,
 for the scent reeks of the divine unknown.
 As sharp as a knife sharpened from whetstone,
-how it came to fruition remains unbeknownst.
+how it came to fruition remains to be shown.
 ```
 
 With my fantasies etched into my head, I embarked on the journey to acquire
@@ -314,7 +314,7 @@ a moral dilemma. I pushed through on the algorithm for nearly weeks on end,
 making my weekday routine devolve down to homework and then dating app work.
 
 I slaved away day and night, chained to my computer as each line of code loosened
-the shackles bit by bit. Finally, at 3 a.m. on a Sunday, the chains shattered—
+the shackles bit by bit. Finally, at 6 p.m. on a Sunday, the chains shattered—
 the links scattering brilliantly across the floor of the dark room.
 I lifted my hands as a free man in utter disbelief: Was there
 anything I had forgotten? After double—no triple checking that everything was in
@@ -322,53 +322,87 @@ order, I sighed in relief.
 
 My hideous progeny was finally alive. I could finally rest. I leaned back in my
 chair and sparked my cigar—tainting the pure air with the smoke of sin. How could
-there be such beauty in immorality?
+something so wrong feel so right?
 
 ## Finale
 
+I stared at the finished demo in utter awe. All that was left was to open the gates
+to the public. I went to school the next day, excited to unveil my creation to the
+world. My fantasies were nearly in reach.
+
+I started by telling people about the app wherever I could, pitching it as if I
+were speaking among investors. I spoke my heart out about how I wanted to
+revolutionize the process of finding love in the school—a tale which couldn't
+be further from the truth. But, I needed to lead the sheep to the slaughterhouse
+somehow.
+
+I had expected reactions of admiration—excitement even. I thought I had a brilliant
+product in front of me which no one in the right mind could refuse. Yet, that wasn't
+the case. The board of investors in front of me laughed hysterically at my life's
+work. My calm persona of confidence tinged in arrogance shattered as I was met with
+a reaction I had never anticipated. It had not been bad enough that the few
+I showcased my masterpiece to had made a cruel joke of it. Many more came as the
+story of my failure disseminated amongst the student body.
+
+I swallowed the bitter taste of rejection in spite, holding back tears. The product
+of my life which was meant to change everything only did so for the worse. I couldn't
+bear showing my face anywhere again. The bell rang for lunch and rather than heading
+straight to my regular table, I headed for the building.
+
+Who thought making a dating app for high school students was a good idea?
+I headed for the stairs, intending
+to make my way to the roof. I made my way to the top floor and scanned each of the
+doors, finally finding one labeled in bold grave letters with, "Roof"
+The black door was locked so I kicked on it hard, mustering strength I would never
+need to utilize again. The door gave way and I trudged up the final flight of stairs,
+each footstep laced with regrets. I reached the crown of the building and gazed
+down the edge, seeing my peers, who were probably—no definitely talking about me.
+I lifted my left foot and placed it upon the edge—shaking slightly as I did so.
+I took a deep breath before repeating this action with my right foot.
+
+I peered down one last time, taking in my surroundings as a camera would on its
+last photograph. I muttered under my breath, "Goodbye, world," before I closed
+my eyes and took the leap of faith onto the cold, hard earth.
+
 ```txt
-[[hack1]] Good evening, Mr. [name].
+[[g-man]] Good evening, Mr. [name].
 
-[Subject] What's going on?
+[Subject] What's going on? Shouldn't I be dead?
 
-[[hack1]] I'm afraid I'm not at... liberty to elaborate. However, I do believe that you're... well aware of your actions leading up to our interaction, Mr. [name].
+[[g-man]] I'm afraid I'm not at... liberty to elaborate. However, I do believe that you're... well aware of your actions leading up to our interaction, Mr. [name].
 
 [Subject] ... I don't know what you're referring to.
 
-[[hack1]] Lying to me is not... in your best interest, Mr. [name] for I wish not to act... against you. Quite on the... contrary. Before I give you... my offer, I must ask you a few questions.
+[[g-man]] Lying to me is not... in your best interest, Mr. [name] for I wish not to act... against your interests. Quite on the... contrary. Before I give you... my offer, I must ask you a few questions.
 
 [Subject] What do you want?
 
-[[hack1]] What lead you to create [dating app], Mr. [name]?
+[[g-man]] What lead you to create [dating app], Mr. [name]?
 
 [Subject] I wanted to be a king and to claim my seat among the heavens. It wasn't for the money nor the power but rather...
 
-[[hack1]] Rather what, Mr. [name]?
+[[g-man]] Rather what, Mr. [name]?
 
 [Subject] I couldn't describe it even if I wanted to. It forwent all reasoning and logic and appealed to the deepest most animalistic desires of mine.
 
-[[hack1]] Were you aware of the... consequences that would arise from the... creation of [dating app], Mr. [name]?
+[[g-man]] Were you aware of the... consequences that would arise from the... creation of [dating app], Mr. [name]?
 
-[Subject] I certainly wasn't unaware. I knew in the back of my mind that my creation could come with dire repurcussions, yet I never was able to truly envision it. All I could think about was the progress I made on its inception.
+[Subject] I certainly wasn't unaware. I knew in the back of my mind that my creation could come with dire repercussions. Yet I never was able to truly envision it. All I could think about was the twisted fantasy in my head.
 
-[[hack1]] Were your actions worth it, Mr. [name]?
+[[g-man]] Were your actions worthwhile, Mr. [name]?
 
 [Subject] Most certainly not. They've caused nothing but unimaginable suffering and I regret everything I've done.
 
-[[hack1]] I understand, Mr. [name]. Now I'd like to bid you an offer before we... part ways. I would like to offer you the opportunity to have your record... expunged. Every last trace of what has happened shall... disappear, as if it were data being overwritten with zeroes.
+[[g-man]] I understand, Mr. [name]. Now I'd like to bid you an offer before we... part ways. I would like to offer you the opportunity to have your record... expunged. Every last trace of your incident shall... disappear, as if it were data being overwritten with zeroes. You shall be able to return back to your... mortal life and enjoy the presence of those... ignorant to your actions. In exchange for my... generosity, you will work under my employment contract as a... contractor.
 
-[Subject] What must I do to redeem this?
+[Subject] I.. cannot accept this. I'm sorry. I cannot live subservient to another. I wish to be alive on my own terms. Living otherwise is a fate worse than death.
 
-[[hack1]] You've already fulfilled my... expectations, Mr. [name]. Do you accept?
-
-[Subject] I.. cannot accept this. I'm sorry. To give up my past would be to give up my own life. I can't lose sight of who I once was. I cannot accept your offer.
-
-[[hack1]] I had not been... expecting that of you. But, if that's the case, I bid you farewell. Good night, Mr. [name]. I hope you are satisfied with your choice.
+[[g-man]] No regrets, Mr. [name].
 ```
 
 <script>
     const glitchConfig = [
-        { term: "[hack1]",   color: "var(--ctp-red)" },
+        { term: "[g-man]",   color: "var(--ctp-red)" },
         { term: "[dating app]",   color: "var(--ctp-green)" },
         { term: "[name]",   color: "var(--ctp-blue)" }
     ];
