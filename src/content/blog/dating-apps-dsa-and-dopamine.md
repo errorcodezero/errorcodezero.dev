@@ -4,7 +4,6 @@ description: "A tale of app building."
 pubDate: "Feb 28 2026"
 updatedDate: "Feb 28 2026"
 categories: ["storytelling"]
-draft: true
 ---
 
 This story is an attempt at creative writing and by no means reality.
