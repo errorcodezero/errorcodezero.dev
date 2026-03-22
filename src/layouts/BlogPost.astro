@@ -7,16 +7,7 @@ import Footer from "~/components/Footer.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const {
-  title,
-  description,
-  pubDate,
-  updatedDate,
-  heroImage,
-  heroImageAlt,
-  categories,
-} = Astro.props;
-import BlogImage from "../components/BlogImage.astro";
+const { title, description, pubDate, updatedDate, categories } = Astro.props;
 import Tags from "../components/Tags.astro";
 ---
 
@@ -35,16 +26,6 @@ import Tags from "../components/Tags.astro";
     <main>
       <article>
         <div class="top">
-          <div>
-            {
-              heroImage && (
-                <BlogImage
-                  imagePath={`/src/assets${heroImage}`}
-                  altText={!heroImageAlt ? "" : heroImageAlt}
-                />
-              )
-            }
-          </div>
           <div>
             <FormattedDate date={pubDate} />
             {

@@ -3,8 +3,6 @@ title: "Why vim is the best"
 description: "The reasons why you should switch to vim and how it is better"
 pubDate: "Feb 4 2024"
 updatedDate: "Feb 8 2023"
-heroImage: "../../assets/why-vim-is-the-best.png"
-heroImageAlt: "My neovim config."
 categories: ["neovim"]
 ---
 

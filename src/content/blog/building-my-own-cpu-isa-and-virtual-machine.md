@@ -7,7 +7,7 @@ categories: ["C", "low-level", "emulation", "langdev"]
 
 Project Link: [github.com/errorcodezero/turbine](https://github.com/errorcodezero/turbine)
 
-*Please star my project. I'm trying to qualify for [shipwrecked](https://shipwrecked.hackclub.com) and I need a certain amount of github stars to qualify*
+_Please star my project. I'm trying to qualify for [shipwrecked](https://shipwrecked.hackclub.com) and I need a certain amount of github stars to qualify_
 
 To start this off, I want to say that it's been a while since I've created a new post. I quite frankly had been quite occupied with other activities and didn't give writing anything the time it needed. However, in those months of absence, I went down all sorts of paths in my programming journey that I never would have believed that I would go down. I want to give a brief story of how it all began.
 
@@ -23,18 +23,18 @@ Simultaneously, I also found myself somewhat fascinated with emulation and old c
 
 Through all of these different factors, I finally decided, let's build a virtual machine for my own custom CPU architecture. As any programmer knows however, the only way for a project to be guaranteed success is to have a good name. The project is doomed to fail otherwise.
 
-> "*turbine*, that sounds pretty cool to me" - me
+> "_turbine_, that sounds pretty cool to me" - me
 
 When you think of a turbine, you think of something fast and airy. I figured that'll suffice.
 
 ## To Kill a Programmer by Bjarne Stroustrup
 
 ![Stickman standing over dead c++ programmer's grave](../../assets/stickman-standing-over-cpp-programmer-grave.png)
-*bit of an artist here if you couldn't already tell*
+_bit of an artist here if you couldn't already tell_
 
 I decided to write my bytecode vm in C. While I have used C before, I didn't have any big projects with it. My usage of it went as far as just poking around with it and shoving hello world programs into gcc. I did however have decent experience with C++ which coming out of developing mango I had began to get somewhat sick of. It was great for what it was but I got tired of all the complexities it brought with it. The last thing I wanted to even think about was move semantics and rules of 3/5/7(is it 9 now?).
 
-C felt like a breath of fresh air to me. I liked it for the same reason that I enjoyed emulation and old computers: *the simplicity*.
+C felt like a breath of fresh air to me. I liked it for the same reason that I enjoyed emulation and old computers: _the simplicity_.
 
 > what about rust? or zig? - you
 
@@ -43,7 +43,7 @@ I'm not sure on the rust end. I don't know zig. Anyways, I quickly started up a 
 ## Crash Course in Computer Science History
 
 ![A turing machine personified and being yelled at by a boss who wants it to finish it's work.](../../assets/turing-machine-in-factory-with-boss-yelling.png)
-*turing machine*
+_turing machine_
 
 Ok let's strip away everything unique and fancy from a computer and let's take it to the bare minimum. No fancy 5090 TI, no retina display, no true type fonts, no nothing. In fact it's barely digital. It's just a fancy pencil(and eraser!) combined with a sensor.
 
@@ -57,7 +57,7 @@ In order for it to be turing complete, it needs to be able to be able to:
 
 - read and store data with theoretically unlimited memory
 - capability for conditional branching(if statements
-or at a lower level comparisons and jumps)
+  or at a lower level comparisons and jumps)
 - iteration(looping or again comparisons and jumps)
 
 Turing-completeness sounds like a high and mighty standard to try to keep up to; really it's the bare minimum. Almost every computer you can find around you is probably turing complete. Your pc, your smart watch, your phone, etc. Even old consoles like the NES were turing complete as well. So it can't be that hard.
@@ -79,7 +79,7 @@ Let's talk about each of the registers. Register A, B, C, D, and E are general p
 ### quick: what's a stack?
 
 ![stack overflowing](../../assets/stack-overflowing.png)
-*recognize this? it's a stack overflowing*
+_recognize this? it's a stack overflowing_
 
 It's a data structure like a stack of pancakes. Stuff goes into and off the top. Surprisingly, this simple data structure is really important for CPUs, langdev, and a lot of different areas in computer science.
 
@@ -90,48 +90,48 @@ It's so important, that many CPUs have dedicated instructions for manipulating t
 This reverse order makes sense when you think of the memory growing towards each other.
 
 ![diagram of memory](../../assets/memory-diagram-turbine.png)
-*Notice how as stack and general purpose memory both grow, they go towards each other. This makes a lot more sense than the stack starting from the middle and the general purpose memory colliding with it early on. Now, the split for the stack and the general purpose memory can be however the programmer wishes*
+_Notice how as stack and general purpose memory both grow, they go towards each other. This makes a lot more sense than the stack starting from the middle and the general purpose memory colliding with it early on. Now, the split for the stack and the general purpose memory can be however the programmer wishes_
 
 ### back to the programming
 
 Before I got into the code, I wanted to start by building an instruction set. Throughout the entire dev process, the instruction set went through so many different changes and iterations until I finally got it to my liking. Here are the instructions:
 
-- `0x0` -> `LOAD [reg flag] [mem addr]`    -> Load data into register from memory address
-- `0x1` -> `DUMP [reg flag] [mem addr]`    -> Dump data from register into memory address
-- `0x2` -> `MOVE [reg flag] [reg flag]`    -> Move data from first register into second
-- `0x3` -> `LDD [reg flag] [data]`         -> Load data specified in argument into register
-- `0x4` -> `PUSH [reg flag]`               -> Push data from register into stack
-- `0x5` -> `POP [reg flag]`                -> Pop data off the stack and into the register
-- `0x6` -> `ADD [reg flag] [reg flag]`     -> Add both registers together
-- `0x7` -> `ADC [reg flag] [reg flag]`     -> [Add with carry](https://retrocomputing.stackexchange.com/questions/29805/what-does-an-adc-add-with-carry-instruction-following-add-do) both registers together
-- `0x8` -> `SUB [reg flag] [reg flag]`     -> Subtract both registers
-- `0x9` -> `SBB [reg flag] [reg flag]`     -> [Subtract with borrow](https://stackoverflow.com/questions/21863607/what-is-a-borrow-in-hexadecimal-subtraction-assembly) both registers
-- `0xA` -> `NOT [reg flag]`                -> Bitwise NOT on a given register
-- `0xB` -> `OR [reg flag] [reg flag]`      -> Bitwise OR on a given register
-- `0xC` -> `AND [reg flag] [reg flag]`     -> Bitwise AND on a given register
-- `0xD` -> `CMP [reg flag] [reg flag]`     -> Compare two registers
+- `0x0` -> `LOAD [reg flag] [mem addr]` -> Load data into register from memory address
+- `0x1` -> `DUMP [reg flag] [mem addr]` -> Dump data from register into memory address
+- `0x2` -> `MOVE [reg flag] [reg flag]` -> Move data from first register into second
+- `0x3` -> `LDD [reg flag] [data]` -> Load data specified in argument into register
+- `0x4` -> `PUSH [reg flag]` -> Push data from register into stack
+- `0x5` -> `POP [reg flag]` -> Pop data off the stack and into the register
+- `0x6` -> `ADD [reg flag] [reg flag]` -> Add both registers together
+- `0x7` -> `ADC [reg flag] [reg flag]` -> [Add with carry](https://retrocomputing.stackexchange.com/questions/29805/what-does-an-adc-add-with-carry-instruction-following-add-do) both registers together
+- `0x8` -> `SUB [reg flag] [reg flag]` -> Subtract both registers
+- `0x9` -> `SBB [reg flag] [reg flag]` -> [Subtract with borrow](https://stackoverflow.com/questions/21863607/what-is-a-borrow-in-hexadecimal-subtraction-assembly) both registers
+- `0xA` -> `NOT [reg flag]` -> Bitwise NOT on a given register
+- `0xB` -> `OR [reg flag] [reg flag]` -> Bitwise OR on a given register
+- `0xC` -> `AND [reg flag] [reg flag]` -> Bitwise AND on a given register
+- `0xD` -> `CMP [reg flag] [reg flag]` -> Compare two registers
 - `0xE` -> `JUMP [status flag] [mem addr]` -> Move instruction pointer to given memory address if given status flag is set
-- `0xF` -> `HLT`                           -> Stop the program execution
+- `0xF` -> `HLT` -> Stop the program execution
 
 It's a very simple instruction set by design. I wanted all the instructions to fit within a single hexadecimal digit.
 
 Another detail about the processor is that it has a 16-bit data bus. This means that the memory addresses themselves are 2 bytes. The word size(how much can be stored at a given memory address) is 8-bit since that's typically the norm with computers. However, this discrepancy in the word size and the data bus size means that in order for registers like the stack pointer to store a memory address, they need to be 2 bytes wide. That's why nearly all the registers are 2 bytes(except the status register). For the instructions to specify a register in their arguments, a set of register flags need to be created as well:
 
-- `0x0` -> `RA_BYTE`               -> 1 byte to register A
-- `0x1` -> `RA_TWO_BYTES`          -> 2 bytes to register A
-- `0x2` -> `RB_BYTE`               -> 1 byte to register B
-- `0x3` -> `RB_TWO_BYTES`          -> 2 bytes to register B
-- `0x4` -> `RC_BYTE`               -> 1 byte to register C
-- `0x5` -> `RC_TWO_BYTES`          -> 2 bytes to register C
-- `0x6` -> `RD_BYTE`               -> 1 byte to register D
-- `0x7` -> `RD_TWO_BYTES`          -> 2 bytes to register D
-- `0x8` -> `RE_BYTE`               -> 1 byte to register E
-- `0x9` -> `RE_TWO_BYTES`          -> 2 bytes to register E
-- `0xa` -> `STACK_PTR`             -> 2 bytes to stack pointer
-- `0xb` -> `BASE_PTR`              -> 2 bytes to base pointer
-- `0xc` -> `ACCUMULATOR_BYTE`      -> 1 byte to accumulator
-- `0xd` -> `ACCUMULATOR_TWO_BYTE`  -> 2 byte to accumulator
-- `0xe` -> `STATUS`                -> Status flag(1 byte) to status register
+- `0x0` -> `RA_BYTE` -> 1 byte to register A
+- `0x1` -> `RA_TWO_BYTES` -> 2 bytes to register A
+- `0x2` -> `RB_BYTE` -> 1 byte to register B
+- `0x3` -> `RB_TWO_BYTES` -> 2 bytes to register B
+- `0x4` -> `RC_BYTE` -> 1 byte to register C
+- `0x5` -> `RC_TWO_BYTES` -> 2 bytes to register C
+- `0x6` -> `RD_BYTE` -> 1 byte to register D
+- `0x7` -> `RD_TWO_BYTES` -> 2 bytes to register D
+- `0x8` -> `RE_BYTE` -> 1 byte to register E
+- `0x9` -> `RE_TWO_BYTES` -> 2 bytes to register E
+- `0xa` -> `STACK_PTR` -> 2 bytes to stack pointer
+- `0xb` -> `BASE_PTR` -> 2 bytes to base pointer
+- `0xc` -> `ACCUMULATOR_BYTE` -> 1 byte to accumulator
+- `0xd` -> `ACCUMULATOR_TWO_BYTE` -> 2 byte to accumulator
+- `0xe` -> `STATUS` -> Status flag(1 byte) to status register
 
 You may notice have most of the registers have a one and two byte variant for their flags. This is because there are many cases in which I only want to use one byte of data. For example, if I want to dump the contents of register A that contains an ascii character to memory address 0x0 in order to try to print it to the console, I don't want to dump two bytes and overflow into memory address 0x1.
 
@@ -139,13 +139,13 @@ This isn't the case for the stack and base pointer since they are as they say: a
 
 You may be wondering what the status register is for. That contains the status after various operations. For example, using the `CMP` instruction, if I compared two registers, the result of the comparison would be put into the status register. The `JUMP` instruction reads the status register and checks it with the status flag passed in as an argument. If the argument matches with the flag in the register, then it jumps to the given memory address. Here are the various status flags:
 
-- `0x0` -> `CMP_EQUAL_TO`     -> When `CMP` finds both registers equal to each other
+- `0x0` -> `CMP_EQUAL_TO` -> When `CMP` finds both registers equal to each other
 - `0x1` -> `CMP_GREATER_THAN` -> When `CMP` finds register a greater than b
-- `0x2` -> `CMP_LESS_THAN`    -> When `CMP` finds register a less than b
-- `0x3` -> `ADD_CARRY`        -> When `ADC` or `ADD` set a carry flag
-- `0x4` -> `ADD_NO_CARRY`     -> When `ADC` or `ADD` don't set a carry flag
-- `0x5` -> `SUB_BORROW`       -> When `SBB` or `SUB` set a carry flag
-- `0x6` -> `SUB_NO_BORROW`    -> When `SBB` or `SUB` don't set a carry flag
+- `0x2` -> `CMP_LESS_THAN` -> When `CMP` finds register a less than b
+- `0x3` -> `ADD_CARRY` -> When `ADC` or `ADD` set a carry flag
+- `0x4` -> `ADD_NO_CARRY` -> When `ADC` or `ADD` don't set a carry flag
+- `0x5` -> `SUB_BORROW` -> When `SBB` or `SUB` set a carry flag
+- `0x6` -> `SUB_NO_BORROW` -> When `SBB` or `SUB` don't set a carry flag
 
 ### actually programming(finally)
 
@@ -169,7 +169,7 @@ typedef struct VirtualMachine {
 } VirtualMachine;
 ```
 
-Essentially there's a field for each register and a byte array for the memory of the system. There's also an array of devices in which the different devices that tie into each CPU cycle are added. 
+Essentially there's a field for each register and a byte array for the memory of the system. There's also an array of devices in which the different devices that tie into each CPU cycle are added.
 
 Moving on, there's also the halted field which is set to true when the CPU encounters an `HLT` instruction. Execution gets halted when the flag is set.
 
@@ -218,7 +218,8 @@ void reg_flag_parser(VirtualMachine *vm, uint16_t **ptr) {
   }
 }
 ```
-*switch statement again*
+
+_switch statement again_
 
 This function wouldn't tell me if I'm using the one or two byte version of the register though. It would only give a pointer to the register. Because of this, each case in the other switch statement would check if it's the one or two byte register flag.
 
@@ -254,7 +255,7 @@ case POP: {
 }
 ```
 
-*Notice how I went back in order to check the register again. A good optimization at this point would have been to maybe take in two pointers in the reg_flag_parser function where one is of type uint8_t\*\* and the other is of type uint16_t\*\**
+\*Notice how I went back in order to check the register again. A good optimization at this point would have been to maybe take in two pointers in the reg_flag_parser function where one is of type uint8_t\*\* and the other is of type uint16_t\*\*\*
 
 The functionality itself was pretty simple. The instructions aren't anything that complicated so I didn't struggle very much. A few other notable things are that I created a small debug print utility which would help with printing out memory addresses and register contents.
 
@@ -377,7 +378,8 @@ LDD RA_BYTE 0x21
 DUMP RA_BYTE 0x0 0x0
 HLT
 ```
-*hello world program, if you couldn't tell*
+
+_hello world program, if you couldn't tell_
 
 It's pretty crude and sure is a far cry from actually good assembly parsers like nasm and others like it that allow you to make subroutines and whatnot.
 
@@ -432,9 +434,9 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-*I can finally take a file as an input and use it with the vm*
+_I can finally take a file as an input and use it with the vm_
 
-After testing everything and ensuring it works, I finally could play around with my creation. A real assembly parser is definitely needed before anymore work is done with this since it is an actual pain to write assembly like this. 
+After testing everything and ensuring it works, I finally could play around with my creation. A real assembly parser is definitely needed before anymore work is done with this since it is an actual pain to write assembly like this.
 
 ## Conclusion
 

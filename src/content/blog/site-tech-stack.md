@@ -3,8 +3,6 @@ title: "Tech Stack for this Website"
 description: "The tech stack for the website."
 pubDate: "Feb 8 2024"
 updatedDate: "September 6 2024"
-heroImage: "../../assets/site-tech-stack.png"
-heroImageAlt: "The astro logo."
 categories: ["tech-stack", "astro", "this"]
 ---
 

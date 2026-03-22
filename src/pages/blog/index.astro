@@ -9,54 +9,54 @@ import Footer from "~/components/Footer.astro";
 const allPosts = await getCollection("blog");
 
 const posts = allPosts
-	.filter((post) => !post.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title="Blog" description={SITE_DESCRIPTION} />
-	</head>
-	<body class="default">
-		<Header />
-		<main>
-			<h1 class="page-title">Blogs</h1>
-			<section>
-				<ul class="post-list">
-					{
-						posts.map((post) => (
-							<li class="post-item">
-								<a href={`/blog/${post.id}/`}>
-									<p>{post.data.title}</p>
-									<FormattedDate date={post.data.pubDate} />
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title="Blog" description={SITE_DESCRIPTION} />
+  </head>
+  <body class="default">
+    <Header />
+    <main>
+      <h1 class="page-title">Blogs</h1>
+      <section>
+        <ul class="post-list">
+          {
+            posts.map((post) => (
+              <li class="post-item">
+                <a href={`/blog/${post.id}/`}>
+                  <p>{post.data.title}</p>
+                  <FormattedDate date={post.data.pubDate} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-	.page-title {
-		padding-bottom: 0.5em;
-	}
+  .page-title {
+    padding-bottom: 0.5em;
+  }
 
-	.post-list {
-		padding-left: 0.125em;
-		list-style-type: none;
-	}
+  .post-list {
+    padding-left: 0.125em;
+    list-style-type: none;
+  }
 
-	.post-item + .post-item {
-		margin-top: 1em;
-	}
+  .post-item + .post-item {
+    margin-top: 1em;
+  }
 
-	.post-item {
-		padding-bottom: 0.5em;
-		list-style: none;
-	}
+  .post-item {
+    padding-bottom: 0.5em;
+    list-style: none;
+  }
 </style>

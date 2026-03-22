@@ -38,7 +38,17 @@ body {
   place-items: center;
   color: var(--ctp-text);
   background-color: var(--ctp-crust);
-  font-family: Geist Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    Geist Sans,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
 
 .default h1 {
@@ -96,7 +106,16 @@ body {
 
 /* Code Blocks */
 .default code {
-  font-family: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    Geist Mono,
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
   border-radius: 0.75rem;
   overflow: hidden;
   font-size: 1.2rem;
@@ -111,7 +130,7 @@ body {
   overflow-x: hidden;
 }
 
-.blog>*+* {
+.blog > * + * {
   margin-top: 1rem;
 }
 
