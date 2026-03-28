@@ -1,5 +1,6 @@
 ---
 import { buttons } from "./buttons";
+import { Image } from "astro:assets";
 ---
 
 <div style="display: flex;">
@@ -8,11 +9,24 @@ import { buttons } from "./buttons";
 		width="90px"
 		height="40px"
 		style="border: 0em;"></iframe>
-	{
-		buttons.map((button) => (
-			<a href={button.link}>
-				<img src={button.src} alt={button.alt} width={88} height={31} />
-			</a>
-		))
-	}
+	<div id="buttons" style="display: flex;">
+		{
+			buttons.map((button) => (
+				<a href={button.link}>
+					<img
+						src={button.src}
+						alt={button.alt}
+						width={88}
+						height={31}
+					/>
+				</a>
+			))
+		}
+	</div>
+	<a href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
+		><img
+			src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
+			alt="Simple Analytics Badge"
+		/></a
+	>
 </div>
