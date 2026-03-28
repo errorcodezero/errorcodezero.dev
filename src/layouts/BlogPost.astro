@@ -7,61 +7,61 @@ import Footer from "~/components/Footer.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, categories } = Astro.props;
-import Tags from "../components/Tags.astro";
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <html lang="en">
-  <head>
-    <BaseHead title={title} description={description} />
-    <style>
-      .top {
-        margin-bottom: 1em;
-      }
-    </style>
-  </head>
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.top {
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
 
-  <body class="default">
-    <Header />
-    <main>
-      <article>
-        <div class="top">
-          <div>
-            <FormattedDate date={pubDate} />
-            {
-              updatedDate && (
-                <p>
-                  Last updated on <FormattedDate date={updatedDate} />
-                </p>
-              )
-            }
-          </div>
-          <h1>{title}</h1>
-          <Tags data={!categories ? [] : categories} />
-          <hr />
-        </div>
-        <div class="blog">
-          <slot />
-        </div>
-      </article>
-      <script
-        is:inline
-        src="https://giscus.app/client.js"
-        data-repo="errorcodezero/errorcodezero.dev"
-        data-repo-id="R_kgDOLNf6xQ"
-        data-category="Comments"
-        data-category-id="DIC_kwDOLNf6xc4CgLyh"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="catppuccin_mocha"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async></script>
-    </main>
-    <Footer />
-  </body>
+	<body class="default">
+		<Header />
+		<main>
+			<article>
+				<div class="top">
+					<div>
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<p>
+									Last updated on{" "}
+									<FormattedDate date={updatedDate} />
+								</p>
+							)
+						}
+					</div>
+					<h1>{title}</h1>
+					<span>{description}</span>
+					<hr />
+				</div>
+				<div class="blog">
+					<slot />
+				</div>
+			</article>
+			<script
+				is:inline
+				src="https://giscus.app/client.js"
+				data-repo="errorcodezero/errorcodezero.dev"
+				data-repo-id="R_kgDOLNf6xQ"
+				data-category="Comments"
+				data-category-id="DIC_kwDOLNf6xc4CgLyh"
+				data-mapping="title"
+				data-strict="0"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="bottom"
+				data-theme="catppuccin_mocha"
+				data-lang="en"
+				data-loading="lazy"
+				crossorigin="anonymous"
+				async></script>
+		</main>
+		<Footer />
+	</body>
 </html>

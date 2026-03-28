@@ -8,83 +8,48 @@ import coolerLogo from "~/assets/cooler_logo.svg";
 import EightyEight from "~/components/EightyEight.astro";
 
 const code =
-  '<a href="https://errorcodezero.dev/"><img alt="ErrorCode0" src="https://errorcodezero.dev/button.png"></img></a>';
+	'<a href="https://errorcodezero.dev/"><img alt="ErrorCode0" src="https://errorcodezero.dev/button.png"></img></a>';
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title="Home" description={SITE_DESCRIPTION} />
-    <style>
-      .gradient-bar {
-        background: linear-gradient(
-          to right,
-          #d60270 0%,
-          #9b4f96 50%,
-          #0038a8 100%
-        );
-        height: 0.3em;
-        width: 12em;
-        margin: 0;
-        transition:
-          background-color 1s ease-out,
-          width 2s ease-out;
-      }
-      .gradient-bar:hover {
-        background: linear-gradient(
-          to right,
-          #d60270 0%,
-          #d60270 33.33%,
-          #9b4f96 33.33%,
-          #9b4f96 66.66%,
-          #0038a8 66.66%,
-          #0038a8 100%
-        );
-      }
-    </style>
-  </head>
-  <body class="default">
-    <Header />
-    <main>
-      <h1>ErrorCode0</h1>
-      <p>
-        I'm a programmer from the US. Here are some interesting facts about me:
-      </p>
-      <ul>
-        <li>I like math and interesting logic problems.</li>
-        <li>
-          I like a lot of different games such as the portal series, the half
-          life series, minecraft.
-        </li>
-        <li>I don't like repetition.</li>
-        <li>I'm looking for the next startup idea.</li>
-        <li>I don't like repetition.</li>
-      </ul>
-      <p>Add my button to your website by copying the following code block:</p>
-      <code>
-        {code}
-      </code>
-      <div></div>
-      <iframe
-        src="https://scrobbly-doo.errorcodezero.dev/"
-        height="85px"
-        width="400px"
-        style="border: 0em; border-radius: 0.5em;"></iframe>
-      <div></div>
-      <iframe
-        src="https://webring.hackclub.com/embed.html"
-        width="90px"
-        height="80px"
-        style="border: 0em;"></iframe>
-      <div></div>
-      <Image
-        src={coolerLogo}
-        alt="The word error"
-        loading="eager"
-        width="500"
-      />
-    </main>
-    <EightyEight />
-    <Footer />
-  </body>
+	<head>
+		<BaseHead title="Home" description={SITE_DESCRIPTION} />
+	</head>
+	<body class="default">
+		<Header />
+		<main>
+			<h1>ErrorCode0</h1>
+			<p>
+				I'm a programmer from the US. Here are some interesting facts
+				about me:
+			</p>
+			<ul>
+				<li>I like math and interesting logic problems.</li>
+				<li>
+					I like a lot of different games such as the portal series,
+					the half life series, minecraft.
+				</li>
+				<li>I don't like repetition.</li>
+				<li>I'm looking for the next startup idea.</li>
+				<li>I don't like repetition.</li>
+			</ul>
+			<p>
+				Add my button to your website by copying the following code
+				block:
+			</p>
+			<code>
+				{code}
+			</code>
+			<div></div>
+			<Image
+				src={coolerLogo}
+				alt="The word error"
+				loading="eager"
+				width="500"
+			/>
+		</main>
+		<EightyEight />
+		<Footer />
+	</body>
 </html>

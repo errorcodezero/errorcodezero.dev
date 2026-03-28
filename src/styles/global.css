@@ -104,6 +104,11 @@ body {
   color: var(--ctp-subtext0);
 }
 
+.default hr {
+	margin-top: 1em;
+	border-top: 0.2em solid var(--ctp-surface0);
+}
+
 /* Code Blocks */
 .default code {
   font-family:

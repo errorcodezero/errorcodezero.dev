@@ -3,11 +3,16 @@ import { buttons } from "./buttons";
 ---
 
 <div style="display: flex;">
-  {
-    buttons.map((button) => (
-      <a href={button.link}>
-        <img src={button.src} alt={button.alt} width={88} height={31} />
-      </a>
-    ))
-  }
+	<iframe
+		src="https://webring.hackclub.com/embed.html"
+		width="90px"
+		height="40px"
+		style="border: 0em;"></iframe>
+	{
+		buttons.map((button) => (
+			<a href={button.link}>
+				<img src={button.src} alt={button.alt} width={88} height={31} />
+			</a>
+		))
+	}
 </div>
