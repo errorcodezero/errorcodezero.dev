@@ -34,4 +34,9 @@ export const buttons = [
 		link: "https://www.addy10s.xyz/",
 		alt: "Addy's Button",
 	},
+	{
+		src: "https://fireentity.space/88x31/fireentity.gif",
+		link: "https://fireentity.space/",
+		alt: "Fireentity's Button",
+	}
 ];
