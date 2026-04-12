@@ -38,5 +38,10 @@ export const buttons = [
 		src: "https://fireentity.space/88x31/fireentity.gif",
 		link: "https://fireentity.space/",
 		alt: "Fireentity's Button",
+	},
+	{
+		src: "https://irispond.net/images/irisbutton.png",
+		link: "https://irispond.net",
+		alt: "Iris' Button"
 	}
 ];

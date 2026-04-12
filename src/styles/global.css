@@ -39,7 +39,6 @@ body {
   color: var(--ctp-text);
   background-color: var(--ctp-crust);
   font-family:
-    Geist Sans,
     ui-sans-serif,
     system-ui,
     -apple-system,
@@ -112,7 +111,6 @@ body {
 /* Code Blocks */
 .default code {
   font-family:
-    Geist Mono,
     ui-monospace,
     SFMono-Regular,
     Menlo,

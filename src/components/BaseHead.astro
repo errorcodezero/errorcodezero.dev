@@ -2,12 +2,6 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "~/styles/global.css";
-import "@fontsource/geist-sans";
-import "@fontsource/geist-mono";
-import geistSans from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2";
-import geistMono from "@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2";
-import geistSansWoff from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff";
-import geistMonoWoff from "@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff";
 import coolerLogo from "~/assets/cooler_logo.svg";
 import { ClientRouter } from "astro:transitions";
 
@@ -54,24 +48,6 @@ import logo from "../assets/logo.png";
 <meta property="twitter:title" content={`${title} | ${SITE_TITLE}`} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
-<!-- Preloads -->
-<link rel="preload" href={geistSans} as="font" type="font/woff2" crossorigin />
-<link rel="preload" href={geistMono} as="font" type="font/woff2" crossorigin />
-<link
-	rel="preload"
-	href={geistSansWoff}
-	as="font"
-	type="font/woff"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href={geistMonoWoff}
-	as="font"
-	type="font/woff"
-	crossorigin
-/>
 
 <!--My mastodon account(This is here for verifying the account) -->
 <link rel="me" href="https://mas.to/@errorcodezero" />

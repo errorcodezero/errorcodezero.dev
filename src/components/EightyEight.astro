@@ -1,32 +1,45 @@
 ---
 import { buttons } from "./buttons";
-import { Image } from "astro:assets";
+import { Image, Picture } from "astro:assets";
+import catppuccin from "../assets/catppuccin.png";
+import dead88x31 from "../assets/dead88x31.png";
 ---
 
-<div style="display: flex;">
-	<iframe
-		src="https://webring.hackclub.com/embed.html"
-		width="90px"
-		height="40px"
-		style="border: 0em;"></iframe>
+<div style="display: flex; flex-direction: column; padding: 0.2em;">
+	<div style="display: flex; margin-bottom: 0.5em;">
+		<div style="display: flex; padding: 0.5em;">
+			<iframe
+				src="https://webring.hackclub.com/embed.html"
+				width="90px"
+				height="40px"
+				style="border: 0em;"></iframe>
+			<a href="https://ctp-webr.ing/errorcodezero/previous">&larr;</a><a
+				href="https://ctp-webr.ing/"
+				style=""><Image src={catppuccin} alt="A cat" width={35} /></a
+			><a href="https://ctp-webr.ing/errorcodezero/next">&rarr;</a>
+		</div>
+		<a href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
+			><Image
+				src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
+				alt="Simple Analytics Badge"
+				width={210}
+				height={50}
+			/></a
+		>
+	</div>
 	<div style="display: flex;">
 		{
 			buttons.map((button) => (
 				<a href={button.link}>
-					<img
-						src={button.src}
-						alt={button.alt}
+					<Image
+						src={`${button.src}`}
 						width={88}
 						height={31}
+						alt={`${button.alt}`}
+						onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
 					/>
 				</a>
 			))
 		}
 	</div>
-	<a href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
-		><img
-			src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
-			alt="Simple Analytics Badge"
-		/></a
-	>
 </div>

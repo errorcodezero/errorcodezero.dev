@@ -16,8 +16,6 @@
     "@astrojs/partytown": "^2.1.5",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
-    "@fontsource/geist-mono": "^5.2.7",
-    "@fontsource/geist-sans": "^5.2.5",
     "@iconify-json/mdi": "^1.2.3",
     "astro": "6.0.8",
     "astro-icon": "^1.1.5",
