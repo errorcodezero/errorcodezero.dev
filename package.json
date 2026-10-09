@@ -9,16 +9,16 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-	"sync": "git submodule sync"
+    "sync": "git submodule sync"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/mdx": "7.0.5",
-    "@astrojs/partytown": "^2.1.7",
+    "@astrojs/mdx": "8.0.3",
+    "@astrojs/partytown": "^2.1.8",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@iconify-json/mdi": "^1.2.3",
-    "astro": "7.2.0",
+    "astro": "7.3.8",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
     "sharp": "^0.33.5",
