@@ -1,29 +1,27 @@
 ---
 import { buttons } from "./buttons";
+import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import dead88x31 from "../assets/dead88x31.png";
+
+const onerror = `this.onerror=null;this.src='${dead88x31.src}';`;
 ---
 
 <div class="eighty-eight">
 	<div class="button-river">
 		<div class="button-track">
 			{
-				buttons.map((button) => (
-					<a href={button.link} class="btn">
-						<Image
-							src={button.src}
-							width={88}
-							height={31}
-							alt={button.alt}
-							loading="eager"
-							onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
-						/>
-					</a>
-				))
+				buttons.map((button) => {
+					const img = typeof button.src !== "string"
+						? <Image src={button.src as ImageMetadata} width={88} height={31} alt={button.alt} loading="eager" />
+						: <img src={button.src} width={88} height={31} alt={button.alt} loading="eager" onerror={onerror} />;
+					return <a href={button.link ?? "/"} class="btn" aria-label={button.alt} title={button.alt}>{img}</a>;
+				})
 			}
 			<a
 				href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
 				class="badge"
+				aria-label="Simple Analytics Dashboard"
 			>
 				<img
 					src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
@@ -34,18 +32,12 @@ import dead88x31 from "../assets/dead88x31.png";
 				/>
 			</a>
 			{
-				buttons.map((button) => (
-					<a href={button.link} class="btn" aria-hidden="true" tabindex="-1">
-						<Image
-							src={button.src}
-							width={88}
-							height={31}
-							alt=""
-							loading="eager"
-							onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
-						/>
-					</a>
-				))
+				buttons.map((button) => {
+					const img = typeof button.src !== "string"
+						? <Image src={button.src as ImageMetadata} width={88} height={31} alt="" loading="eager" />
+						: <img src={button.src} width={88} height={31} alt="" loading="eager" onerror={onerror} />;
+					return <a href={button.link ?? "/"} class="btn" aria-hidden="true" tabindex="-1">{img}</a>;
+				})
 			}
 			<a
 				href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
@@ -156,4 +148,35 @@ import dead88x31 from "../assets/dead88x31.png";
 		}
 	}
 </style>
+
+<script is:inline>
+	function shuffleButtons() {
+		const track = document.querySelector(".button-track");
+		if (!track) return;
+
+		const btns = [...track.querySelectorAll(".btn")];
+		const n = btns.length / 2;
+		const first = btns.slice(0, n);
+		const second = btns.slice(n);
+
+		// Fisher-Yates shuffle on indices
+		const idx = Array.from({ length: n }, (_, i) => i);
+		for (let i = n - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[idx[i], idx[j]] = [idx[j], idx[i]];
+		}
+
+		const badge = track.querySelector(".badge:not([aria-hidden])");
+		const badgeHidden = track.querySelector(".badge[aria-hidden]");
+
+		track.innerHTML = "";
+		idx.forEach((i) => track.appendChild(first[i]));
+		if (badge) track.appendChild(badge);
+		idx.forEach((i) => track.appendChild(second[i]));
+		if (badgeHidden) track.appendChild(badgeHidden);
+	}
+
+	shuffleButtons();
+	document.addEventListener("astro:after-swap", shuffleButtons);
+</script>
 

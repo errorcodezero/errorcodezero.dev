@@ -1,8 +1,40 @@
-export const buttons = [
+import type { ImageMetadata } from "astro";
+import americanflag from "../assets/americanflag.gif";
+import newlambdaresearchfacility from "../assets/newlambdaresearchfacility.gif";
+import neovim from "../assets/neovim.png";
+import portal2now from "../assets/portal2now.gif";
+import movingpurpletrain from "../assets/movingpurpletrain.gif";
+import googleballs from "../assets/googleballs.gif";
+
+export const buttons: { src: string | ImageMetadata; link?: string; alt: string }[] = [
 	{
 		src: "/button.gif",
 		link: "/",
 		alt: "ErrorCode0's Button",
+	},
+	{
+		src: americanflag,
+		alt: "American Flag Button",
+	},
+	{
+		src: newlambdaresearchfacility,
+		alt: "New Lambda Research Facility Button",
+	},
+	{
+		src: neovim,
+		alt: "Neovim Button",
+	},
+	{
+		src: portal2now,
+		alt: "Portal 2 Now Button",
+	},
+	{
+		src: movingpurpletrain,
+		alt: "Moving Purple Train Button",
+	},
+	{
+		src: googleballs,
+		alt: "Google Balls Button",
 	},
 	{
 		src: "https://bomberfish.ca/button.gif",
