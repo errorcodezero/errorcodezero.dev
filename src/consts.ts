@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "ErrorCode0";
 export const SITE_DESCRIPTION = "A nice little tech blog.";
+export const SITE_HOST = "errorcodezero.dev";

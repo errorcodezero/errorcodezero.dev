@@ -1,45 +1,159 @@
 ---
 import { buttons } from "./buttons";
-import { Image, Picture } from "astro:assets";
-import catppuccin from "../assets/catppuccin.png";
+import { Image } from "astro:assets";
 import dead88x31 from "../assets/dead88x31.png";
 ---
 
-<div style="display: flex; flex-direction: column; padding: 0.2em;">
-	<div style="display: flex; margin-bottom: 0.5em;">
-		<div style="display: flex; padding: 0.5em;">
-			<iframe
-				src="https://webring.hackclub.com/embed.html"
-				width="90px"
-				height="40px"
-				style="border: 0em;"></iframe>
-			<a href="https://ctp-webr.ing/errorcodezero/previous">&larr;</a><a
-				href="https://ctp-webr.ing/"
-				style=""><Image src={catppuccin} alt="A cat" width={35} /></a
-			><a href="https://ctp-webr.ing/errorcodezero/next">&rarr;</a>
+<div class="eighty-eight">
+	<div class="button-river">
+		<div class="button-track">
+			{
+				buttons.map((button) => (
+					<a href={button.link} class="btn">
+						<Image
+							src={button.src}
+							width={88}
+							height={31}
+							alt={button.alt}
+							loading="eager"
+							onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
+						/>
+					</a>
+				))
+			}
+			<a
+				href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
+				class="badge"
+			>
+				<img
+					src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
+					alt="Simple Analytics Badge"
+					width="130"
+					height="31"
+					loading="eager"
+				/>
+			</a>
+			{
+				buttons.map((button) => (
+					<a href={button.link} class="btn" aria-hidden="true" tabindex="-1">
+						<Image
+							src={button.src}
+							width={88}
+							height={31}
+							alt=""
+							loading="eager"
+							onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
+						/>
+					</a>
+				))
+			}
+			<a
+				href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
+				class="badge"
+				aria-hidden="true"
+				tabindex="-1"
+			>
+				<img
+					src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
+					alt=""
+					width="130"
+					height="31"
+					loading="eager"
+				/>
+			</a>
 		</div>
-		<a href="https://dashboard.simpleanalytics.com/errorcodezero.dev"
-			><Image
-				src="https://simpleanalyticsbadges.com/errorcodezero.dev?logo=cba6f7&text=cdd6f4&background=1e1e2e"
-				alt="Simple Analytics Badge"
-				width={210}
-				height={50}
-			/></a
-		>
-	</div>
-	<div style="display: flex;">
-		{
-			buttons.map((button) => (
-				<a href={button.link}>
-					<Image
-						src={`${button.src}`}
-						width={88}
-						height={31}
-						alt={`${button.alt}`}
-						onerror={`this.onerror=null;this.src='${dead88x31.src}';`}
-					/>
-				</a>
-			))
-		}
 	</div>
 </div>
+
+<style>
+	.eighty-eight {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.75em;
+		width: 100%;
+	}
+
+	.button-river {
+		width: 100%;
+		max-width: 46rem;
+		padding: 0 2rem;
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(
+			to right,
+			transparent 0%,
+			black 12%,
+			black 88%,
+			transparent 100%
+		);
+		mask-image: linear-gradient(
+			to right,
+			transparent 0%,
+			black 12%,
+			black 88%,
+			transparent 100%
+		);
+	}
+
+	.button-track {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		width: max-content;
+		animation: scroll-left 18s linear infinite;
+	}
+
+	.button-track:hover {
+		animation-play-state: paused;
+	}
+
+	.button-track a {
+		display: inline-flex;
+		line-height: 0;
+		flex-shrink: 0;
+		transition: transform 0.15s ease;
+	}
+
+	.button-track a:hover {
+		transform: translateY(-6px);
+	}
+
+	.button-track .btn img {
+		image-rendering: pixelated;
+		height: 31px;
+		width: 88px;
+	}
+
+	.button-track .badge img {
+		height: 31px;
+		width: auto;
+	}
+
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.button-river {
+			overflow: visible;
+			-webkit-mask-image: none;
+			mask-image: none;
+		}
+
+		.button-track {
+			animation: none;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+
+		.button-track a[aria-hidden="true"] {
+			display: none;
+		}
+	}
+</style>
+

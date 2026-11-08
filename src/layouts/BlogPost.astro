@@ -43,24 +43,24 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				<div class="blog">
 					<slot />
 				</div>
+				<script
+					is:inline
+					src="https://giscus.app/client.js"
+					data-repo="errorcodezero/errorcodezero.dev"
+					data-repo-id="R_kgDOLNf6xQ"
+					data-category="Comments"
+					data-category-id="DIC_kwDOLNf6xc4CgLyh"
+					data-mapping="title"
+					data-strict="0"
+					data-reactions-enabled="1"
+					data-emit-metadata="0"
+					data-input-position="bottom"
+					data-theme="catppuccin_mocha"
+					data-lang="en"
+					data-loading="lazy"
+					crossorigin="anonymous"
+					async></script>
 			</article>
-			<script
-				is:inline
-				src="https://giscus.app/client.js"
-				data-repo="errorcodezero/errorcodezero.dev"
-				data-repo-id="R_kgDOLNf6xQ"
-				data-category="Comments"
-				data-category-id="DIC_kwDOLNf6xc4CgLyh"
-				data-mapping="title"
-				data-strict="0"
-				data-reactions-enabled="1"
-				data-emit-metadata="0"
-				data-input-position="bottom"
-				data-theme="catppuccin_mocha"
-				data-lang="en"
-				data-loading="lazy"
-				crossorigin="anonymous"
-				async></script>
 		</main>
 		<Footer />
 	</body>

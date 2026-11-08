@@ -1,3 +1,6 @@
 [submodule "src/content/blog"]
 	path = src/content/blog
 	url = https://github.com/errorcodezero/blog
+[submodule "public/fonts"]
+	path = public/fonts
+	url = https://github.com/errorcodezero/frans-sans.git

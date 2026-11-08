@@ -8,6 +8,9 @@ import partytown from "@astrojs/partytown";
 export default defineConfig({
   site: "https://www.errorcodezero.dev",
   integrations: [mdx(), sitemap({}), icon(), partytown()],
+  image: {
+    domains: ["assets.hackclub.com"],
+  },
   markdown: {
     shikiConfig: {
       theme: "catppuccin-mocha",

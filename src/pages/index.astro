@@ -3,12 +3,9 @@ import BaseHead from "~/components/BaseHead.astro";
 import Header from "~/components/Header.astro";
 import { SITE_DESCRIPTION } from "~/consts";
 import Footer from "~/components/Footer.astro";
-import { Image } from "astro:assets";
-import coolerLogo from "~/assets/cooler_logo.svg";
 import EightyEight from "~/components/EightyEight.astro";
-
-const code =
-	'<a href="https://errorcodezero.dev/"><img alt="ErrorCode0" src="https://errorcodezero.dev/button.gif"></img></a>';
+import Webrings from "~/components/Webrings.astro";
+import { Image } from "astro:assets";
 ---
 
 <!doctype html>
@@ -19,37 +16,168 @@ const code =
 	<body class="default">
 		<Header />
 		<main>
-			<h1>ErrorCode0</h1>
-			<p>
-				I'm a programmer from the US. Here are some interesting facts
-				about me:
-			</p>
-			<ul>
-				<li>I like math and interesting logic problems.</li>
-				<li>
-					I like a lot of different games such as the portal series,
-					the half life series, minecraft.
-				</li>
-				<li>I don't like repetition.</li>
-				<li>I'm looking for the next startup idea.</li>
-				<li>I don't like repetition.</li>
-			</ul>
-			<p>
-				Add my button to your website by copying the following code
-				block:
-			</p>
-			<code>
-				{code}
-			</code>
-			<div></div>
-			<Image
-				src={coolerLogo}
-				alt="The word error"
-				loading="eager"
-				width="500"
-			/>
+			<article>
+				<h1 style="font-size: clamp(2rem, 10vw, 4rem);">ErrorCode0</h1>
+
+				<p>
+					Hey! I'm ErrorCode0 (he/him). I'm a Bay Area native and high
+					school senior (class of 2027). Here's what I'm into:
+				</p>
+				<ul class="bio-list">
+					<li>
+						Programming &amp; Engineering – I love learning about
+						computers and making them do things.
+					</li>
+					<li>
+						Reading – My favorite genres are science fiction,
+						dystopia, fantasy, as well as non-fiction. Philosophy
+						and legal stuff are pretty cool too.
+					</li>
+					<li>
+						Writing – I like to write the occasional short story,
+						poetry, and technical write-ups on my blog.
+					</li>
+					<li>
+						Public Transit &amp; Urban Planning – I want a less
+						car-centric future and to one day never need to own a
+						car.
+					</li>
+					<li>
+						Mathematics – I don't think I need to say more. There's
+						a reason it's the queen of the sciences.s
+					</li>
+					<li>
+						Art – I make mostly digital art and I post it to my
+						social media; I'm very much a beginner.
+					</li>
+					<li>
+						Outdoors – I like hiking, biking, and camping. The world
+						is yours.
+					</li>
+					<li>
+						Music – I mostly listen to hip-hop, rock, film scores,
+						and video game OST.
+					</li>
+				</ul>
+
+				<p>
+					I'm a major self-learner and love exploring topics without a
+					rigid course structure. If you want to talk, feel free to
+					check out my contact details in the footer. Remember to
+					stand clear of the doors.
+				</p>
+
+				<code>return 0;</code>
+				<div class="bottom-row">
+					<button
+						class="copy-button"
+						id="copy-btn"
+						title="Click to copy embed code"
+					>
+						<Image
+							src="/button.gif"
+							width={88}
+							height={31}
+							alt="ErrorCode0 button"
+							style="image-rendering: pixelated;"
+							loading="eager"
+						/>
+						<span class="copy-label" id="copy-label"
+							>click to copy code</span
+						>
+					</button>
+					<Webrings />
+				</div>
+			</article>
 		</main>
 		<EightyEight />
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.bottom-row {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.bio-list li::marker {
+		content: "> ";
+		font-family: "FranSans", var(--font-sans);
+	}
+
+	.copy-button {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.4rem;
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		margin-top: 0.5rem;
+		-webkit-tap-highlight-color: transparent;
+		transform: translateY(0);
+	}
+
+	.copy-button:focus-visible {
+		outline: 2px solid var(--alternate);
+		outline-offset: 4px;
+		border-radius: 4px;
+	}
+
+	.copy-button:active {
+		transform: none;
+	}
+
+	.copy-button.jump img {
+		animation: button-jump 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+	}
+
+	@keyframes button-jump {
+		0% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-18px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	.copy-label {
+		font-size: 0.75rem;
+		color: var(--muted);
+		font-family: var(--font-sans);
+	}
+
+	.copy-button:hover .copy-label {
+		color: var(--alternate);
+	}
+</style>
+
+<script>
+	const btn = document.getElementById("copy-btn");
+	const label = document.getElementById("copy-label");
+	const code =
+		'<a href="https://errorcodezero.dev/"><img alt="ErrorCode0" src="https://errorcodezero.dev/button.gif" width="88" height="31" /></a>';
+	btn?.addEventListener("click", async () => {
+		await navigator.clipboard.writeText(code);
+		if (label) label.textContent = "copied!";
+		const img = btn.querySelector("img");
+		btn.classList.remove("jump");
+		void btn.offsetWidth;
+		btn.classList.add("jump");
+		img?.addEventListener(
+			"animationend",
+			() => {
+				btn.classList.remove("jump");
+				if (label) label.textContent = "click to copy code";
+			},
+			{ once: true },
+		);
+	});
+</script>

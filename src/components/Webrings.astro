@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import catppuccin from "../assets/catppuccin.png";
+import { SITE_HOST } from "../consts";
+---
+
+<div class="webrings">
+	<div class="webring" id="hackclub-webring">
+		<a id="hc-prev" href="https://webring.hackclub.com/" title="Previous Hack Club site" aria-label="Previous Hack Club webring site">
+			<Icon name="mdi:chevron-left" class="ring-icon" />
+		</a>
+		<a href="https://webring.hackclub.com/" title="Hack Club Webring" aria-label="Hack Club Webring">
+			<Image src="https://assets.hackclub.com/icon-rounded.svg" width={30} height={30} alt="Hack Club" loading="eager" />
+		</a>
+		<a id="hc-next" href="https://webring.hackclub.com/" title="Next Hack Club site" aria-label="Next Hack Club webring site">
+			<Icon name="mdi:chevron-right" class="ring-icon" />
+		</a>
+	</div>
+	<div class="webring">
+		<a href="https://ctp-webr.ing/errorcodezero/previous" title="Previous Catppuccin site" aria-label="Previous Catppuccin webring site">
+			<Icon name="mdi:chevron-left" class="ring-icon" />
+		</a>
+		<a href="https://ctp-webr.ing/" title="Catppuccin Webring" aria-label="Catppuccin Webring">
+			<Image src={catppuccin} alt="Catppuccin webring" width={35} loading="eager" />
+		</a>
+		<a href="https://ctp-webr.ing/errorcodezero/next" title="Next Catppuccin site" aria-label="Next Catppuccin webring site">
+			<Icon name="mdi:chevron-right" class="ring-icon" />
+		</a>
+	</div>
+</div>
+
+<style>
+	.webrings {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+		flex-wrap: wrap;
+	}
+
+	.webring {
+		display: flex;
+		align-items: center;
+		gap: 0.4em;
+	}
+
+	.ring-icon {
+		width: 1.4em;
+		height: 1.4em;
+		display: block;
+	}
+</style>
+
+<script is:inline define:vars={{ SITE_HOST }}>
+	(async () => {
+		const res = await fetch("https://webring.hackclub.com/members.json");
+		const members = await res.json();
+		const idx = members.findIndex(
+			(m) => new URL(m.url).hostname === SITE_HOST,
+		);
+		if (idx === -1) return;
+		const prev = members[(idx - 1 + members.length) % members.length];
+		const next = members[(idx + 1) % members.length];
+		const prevBtn = document.getElementById("hc-prev");
+		const nextBtn = document.getElementById("hc-next");
+		if (prevBtn) prevBtn.href = prev.url;
+		if (nextBtn) nextBtn.href = next.url;
+	})();
+</script>

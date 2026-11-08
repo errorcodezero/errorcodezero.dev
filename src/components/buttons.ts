@@ -20,24 +20,14 @@ export const buttons = [
 		alt: "Vic's Button",
 	},
 	{
-		src: "https://github.com/aelithron/novatea/blob/main/public/88x31.gif?raw=true",
+		src: "https://novatea.dev/88x31.gif",
 		link: "https://novatea.dev",
 		alt: "Nova's Button",
-	},
-	{
-		src: "https://www.dwait.dev/button.jpg",
-		link: "https://www.dwait.dev",
-		alt: "Dwait's Button",
 	},
 	{
 		src: "https://www.addy10s.xyz/addy88x31.gif",
 		link: "https://www.addy10s.xyz/",
 		alt: "Addy's Button",
-	},
-	{
-		src: "https://fireentity.space/88x31/fireentity.gif",
-		link: "https://fireentity.space/",
-		alt: "Fireentity's Button",
 	},
 	{
 		src: "https://irispond.net/images/irisbutton.png",
