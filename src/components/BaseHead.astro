@@ -2,18 +2,16 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "~/styles/global.css";
-import coolerLogo from "~/assets/cooler_logo.svg";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
 	title: string;
 	description: string;
-	image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = coolerLogo.src } = Astro.props;
+const { title, description } = Astro.props;
 import { SITE_TITLE } from "../consts";
 import logo from "../assets/logo.png";
 ---
@@ -60,14 +58,12 @@ import logo from "../assets/logo.png";
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={`${title} | ${SITE_TITLE}`} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={`${title} | ${SITE_TITLE}`} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <!--My mastodon account(This is here for verifying the account) -->
 <link rel="me" href="https://mas.to/@errorcodezero" />
