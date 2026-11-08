@@ -37,8 +37,8 @@ export const buttons: { src: string | ImageMetadata; link?: string; alt: string 
 		alt: "Google Balls Button",
 	},
 	{
-		src: "http://qntm.org/files/camtime/camtime.png",
-		link: "http://qntm.org/camtime",
+		src: "https://qntm.org/files/camtime/camtime.png",
+		link: "https://qntm.org/camtime",
 		alt: "Ban time travel NOW",
 	},
 	{
